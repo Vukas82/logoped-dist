@@ -77,6 +77,9 @@
                     <li><a href="#">
                             <h2>Galerija</h2>
                         </a></li>
+                    <li><a href="#">
+                            <h2>Cenovnik</h2>
+                        </a></li>
                     <li><a href="kontakt.html">
                             <h2>Kontakt</h2>
                         </a></li>
@@ -293,10 +296,655 @@
 
         </div>
     </section>
+
+    <section class="discover__us">
+        <div class="img layer__2" data-speed="-2"></div>
+        <script>
+            document.addEventListener('scroll', parallax2);
+
+            function parallax2(e) {
+                this.querySelectorAll('.layer__2').forEach(layer => {
+                    var speed = layer.getAttribute('data-speed')
+                    // var x = (window.innerWidth - e.pageX * speed) / 100;
+                    var y = (window.innerWidth - window.scrollY * speed) / 100;
+                    layer.style.transform = `translateY(${y}px)`
+                })
+            }
+        </script>
+        <div class="discover_text">
+            <h4>Otkrijte naš prostor</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aperiam est nemo, rerum aliquid
+                voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio a voluptatum similique
+                non vitae. Incidunt distinctio placeat soluta laudantium amet!</p>
+            <div class="link">
+                <a href="kontakt.html" class="left">Kontak</a>
+                <a href="o nama.html" class="right">O nama</a>
+            </div>
+        </div>
+    </section>
+    <section class="parents__say">
+        <svg id="cloud1" class="colored hidden-xs hidden-sm" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" data-speed="-3">
+            <path
+                d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+            </path>
+        </svg>
+        <div class="sunBg layer" data-speed="2"></div>
+        <script>
+            document.addEventListener('mousemove', parallax);
+
+            function parallax(e) {
+                this.querySelectorAll('.layer').forEach(layer => {
+                    var speed = layer.getAttribute('data-speed')
+                    var x = (window.innerWidth - e.pageX * speed) / 100;
+                    var y = (window.innerWidth - e.pageY * speed) / 100;
+                    layer.style.transform = `translateX(${x}px)
+                    translateY(${y}px)`
+                })
+            }
+        </script>
+        <div class="parents container">
+            <h4>Šta roditelji kažu</h4>
+
+            <div class="tedy">
+                <img src="images/logoped-logopedski-tretmani-logoped-borča-tedy.svg"
+                    alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+            </div>
+
+            <!-- SLIDER 2-->
+            <!-- <ul id="lightSlider"> -->
+            <div class="slider__2">
+                <ul class="image-gallery gallery list-unstyled hidden">
+                    <!-- <ul class="image-gallery" style="height: 500px;"> -->
+                    <li>
+                        <card class="card__parent">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial4.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial4.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial3.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial2.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial4.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial3.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+                    <li>
+                        <card class="card__parent">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde vitae itaque
+                                    earum
+                                    ratione
+                                    laborum beatae iure nesciunt ipsam ab!</p>
+                            </div>
+                            <div class="person">
+                                <img src="./images/testimonial2.jpg" alt="">
+                                <p class="ime">Petar Petrović <br>
+                                    <small>Vaspitač</small>
+                                </p>
+                            </div>
+                        </card>
+                    </li>
+
+                </ul>
+                <!-- SLIDER -->
+            </div>
+
+        </div>
+
+        <svg id="cloud2" class="hidden-xs hidden-sm" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+            height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path
+                d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+            </path>
+        </svg>
+    </section>
     <!-- ------------------------------------------------------------------------------------ -->
 
-    <section id="section o nama" style="height:600px; width:100%; background:grey"></section>
+    <section id="section_o_nama">
+        <div class="dete layer" data-speed="-2">
+            <img src="./images/logoped-logopedski-tretmani-logoped-borča-dete.png"
+                alt="logoped-logopedski-tretmani-logoped-borča">
+        </div>
 
+        <div class="onama container">
+            <h3>o nama</h3>
+            <div class="tedy">
+                <img src="images/logoped-logopedski-tretmani-logoped-borča-tedy.svg"
+                    alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+            </div>
+            <div class="tab container">
+                <ul class="tabs">
+                    <li id="tab__1" data-tabSort="0" class="tab__all tab__1 active__2">Ukratko</li>
+                    <li id="tab__2" data-tabSort="0" class="tab__all tab__2">Metode</li>
+                    <li id="tab__3" data-tabSort="0" class="tab__all tab__3">Očekivanja</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="tab1" class="active__tab tab-panel">
+                    <div class="left__tab__content">
+                        <h3>Ukratko o svemu</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur est quia
+                            repudiandae eius eligendi, quaerat nam, ullam rerum, facere ab hic assumenda unde
+                            voluptatibus cum itaque quidem sit consectetur!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus eum totam
+                            similique voluptates doloremque cupiditate velit amet enim omnis voluptatum debitis harum
+                            repellat id ducimus ipsum, maxime minus? Obcaecati.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nihil culpa iste fugiat et
+                            maiores nulla veritatis exercitationem sapiente ipsa perferendis, ex esse, voluptatum
+                            provident beatae accusamus rem. Ab, voluptatibus.</p>
+                    </div>
+                    <div class="right__tab__content">
+                        <img src="./images/logoped-logopedski-tretmani-logoped-borča-kockice.jpg"
+                            alt="logoped-logopedski-tretmani-logoped-borča">
+                    </div>
+
+                    <div class="bottom">
+
+                        <!-- slider 3 -->
+                        <div class="slider__3">
+                            <ul class="image-gallery-2 gallery list-unstyled">
+                                <li>
+                                    <!-- jedan segment -->
+                                    <div class="media">
+                                        <div class="icon">
+                                            <img src="./images/logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru-klackalica.svg"
+                                                alt="logoped-logopedski-tretmani-logoped-borča-pouzdanost">
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media__h">Prilagođen prostor</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                reiciendis.</p>
+                                        </div>
+                                    </div>
+                                    <!-- jedan segment -->
+                                </li>
+                                <li>
+                                    <!-- jedan segment -->
+                                    <div class="media">
+                                        <div class="icon">
+                                            <img src="./images/logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru-klackalica.svg"
+                                                alt="logoped-logopedski-tretmani-logoped-borča-pouzdanost">
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media__h">Prilagođen prostor</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                numquam reiciendis.</p>
+                                        </div>
+                                    </div>
+                                    <!-- jedan segment -->
+                                </li>
+                                <li>
+                                    <!-- jedan segment -->
+                                    <div class="media">
+                                        <div class="icon">
+                                            <img src="./images/logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru.svg"
+                                                alt="logoped-logopedski-tretmani-logoped-borča-pouzdanost">
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media__h">Učenje kroz igru</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                doloremque magni necessitatibus.</p>
+                                        </div>
+                                    </div>
+                                    <!-- jedan segment -->
+                                </li>
+                                <li>
+                                    <!-- jedan segment -->
+                                    <div class="media">
+                                        <div class="icon">
+                                            <!-- <img src="./images/logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru-ljuljaska.svg"
+                                                alt="logoped-logopedski-tretmani-logoped-borča-pouzdanost"> -->
+
+                                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                                xmlns:cc="http://creativecommons.org/ns#"
+                                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                                xmlns:svg="http://www.w3.org/2000/svg"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                                version="1.1" x="0px" y="0px" viewBox="0 0 496.736 496.736"
+                                                style="enable-background:new 0 0 496.736 496.736;" xml:space="preserve"
+                                                sodipodi:docname="logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru-ljuljaska.svg"
+                                                inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+                                                <metadata id="metadata43">
+                                                    <rdf:RDF>
+                                                        <cc:Work rdf:about="">
+                                                            <dc:format>image/svg+xml</dc:format>
+                                                            <dc:type
+                                                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                        </cc:Work>
+                                                    </rdf:RDF>
+                                                </metadata>
+                                                <defs id="defs41" />
+                                                <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666"
+                                                    borderopacity="1" objecttolerance="10" gridtolerance="10"
+                                                    guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+                                                    inkscape:window-width="1366" inkscape:window-height="706"
+                                                    id="namedview39" showgrid="false" inkscape:zoom="0.47510147"
+                                                    inkscape:cx="248.368" inkscape:cy="248.368" inkscape:window-x="-8"
+                                                    inkscape:window-y="-8" inkscape:window-maximized="1"
+                                                    inkscape:current-layer="Capa_1" />
+
+                                                <g id="XMLID_36_" style="fill:#e21c3f;fill-opacity:1">
+                                                    <path id="XMLID_41_" class="svg__deo"
+                                                        d="M410.998,11.299C409.859,4.765,404.175,0,397.535,0H101.101c-6.623,0-12.273,4.742-13.447,11.248   L4.184,476.832c-1.653,9.191,4.474,17.979,13.661,19.632c9.053,1.636,17.973-4.344,19.64-13.67l80.497-448.962h55.358   l-12.854,179.174c-2.875-0.025-5.781,0.404-8.457,1.932c-8.143,4.602-11.002,14.918-6.393,23.053l11.596,20.484l-5.336,74.393   c3.635-3.782,8.078-6.864,13.381-8.665l4.311-1.46l2.693-37.665l7.187,12.688c2.955,5.228,8.473,8.5,14.484,8.581   c0.084,0,0.15,0,0.232,0c4.477,0,8.689-1.769,11.811-4.815c0,2.544,0,23.829,0,26.72l-35.285,11.977   c-8.639,2.931-13.396,12.183-10.754,20.921l18.568,61.318c2.693,8.879,12.076,14.016,21.096,11.283   c8.938-2.71,13.99-12.15,11.283-21.096l-13.828-45.65l33.369-11.324c1.371,0,36.408,0,37.812,0l31.388,10.654l-13.826,45.652   c-2.711,8.945,2.346,18.385,11.281,21.094c8.985,2.727,18.403-2.404,21.096-11.282l18.566-61.32   c2.645-8.737-2.115-17.987-10.754-20.921l-35.435-12.024c0-3.163,0-23.804,0-26.86c3.141,3.146,7.402,5.006,11.963,5.006   c0.082,0,0.148,0,0.229,0c6.013-0.083,11.531-3.354,14.489-8.582l7.365-13.01l2.578,38.002l4.246,1.447   c5.301,1.799,9.762,4.88,13.396,8.671l-5.072-74.889l11.316-19.995c4.609-8.137,1.75-18.452-6.393-23.053   c-2.529-1.438-5.254-1.917-7.978-1.966L324.636,33.832h55.966l78.63,448.896c1.62,9.191,10.225,15.388,19.592,13.744   c9.203-1.611,15.348-10.374,13.744-19.574L410.998,11.299z M302.07,255.244l-12.008-19.905   c-2.412-15.065-15.361-26.612-31.122-26.612h-21.31c-16.139,0-29.289,12.118-31.236,27.711l-11.747,19.477l-17.987-31.783   l13.643-190.299h117.369l12.785,188.912L302.07,255.244z"
+                                                        style="fill:#e21c3f;fill-opacity:1" />
+                                                    <path id="XMLID_40_"
+                                                        d="M352.948,365.377l-5.334,17.625c7.119-1.991,12.455-8.251,12.455-16.016c0-5.046-2.313-9.448-5.814-12.546   C354.369,358.051,354.056,361.735,352.948,365.377z"
+                                                        style="fill:#e21c3f;fill-opacity:1" />
+                                                    <path id="XMLID_39_"
+                                                        d="M142.464,354.441c-3.502,3.098-5.816,7.5-5.816,12.546c0,7.682,5.22,13.909,12.241,15.974l-5.121-16.916   C142.597,362.171,142.267,358.265,142.464,354.441z"
+                                                        style="fill:#e21c3f;fill-opacity:1" />
+                                                    <path id="XMLID_38_"
+                                                        d="M218.005,377.765l1.867,6.137h56.775l2.066-6.805c-4.791-1.627-24.978-8.352-29.619-10.299   C244.189,369.11,223.142,376.023,218.005,377.765z"
+                                                        style="fill:#e21c3f;fill-opacity:1" />
+                                                    <path id="XMLID_37_"
+                                                        d="M248.367,111.281c-22.384,0-40.538,18.146-40.538,40.529s18.154,40.529,40.538,40.529   c22.385,0,40.538-18.146,40.538-40.529S270.752,111.281,248.367,111.281z"
+                                                        style="fill:#e21c3f;fill-opacity:1" />
+                                                </g>
+
+
+                                            </svg>
+
+
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media__h">Prilagođen prostor</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                                doloremque magni necessitatibus.</p>
+                                        </div>
+                                    </div>
+                                    <!-- jedan segment -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- slider 3 -->
+
+
+                    </div>
+
+                </div>
+                <div id="tab2" class="tab-panel__2 hidden">
+                    <h4>Naše svakodnevne aktivnosti</h4>
+
+                    <div class="left__tab__content__2">
+                        <img src="./images/logoped-logopedski-tretmani-logoped-borča-kockice.jpg"
+                            alt="logoped-logopedski-tretmani-logoped-borča">
+                    </div>
+                    <div class="acordion">
+                        <div class="acordion__wraper">
+
+                            <button class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div>
+                            </button>
+
+                            <div class="panel">
+                                <h5>Izgovor</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+
+                            <button class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div></button>
+                            <div class="panel">
+                                <h5>Motorika</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+
+                            <button class="accordion accordion__3">FLOOR TIME METODA <div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div></button>
+                            <div class="panel">
+                                <h5>Učenje kroz igru</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="tab3" class="tab-panel__2 tab-panel__2-2 hidden">
+                    <h4>Naše svakodnevne aktivnosti</h4>
+
+                    <div class="left__tab__content__2">
+                        <img src="./images/logoped-logopedski-tretmani-logoped-borča-kockice.jpg"
+                            alt="logoped-logopedski-tretmani-logoped-borča">
+                    </div>
+                    <div class="acordion">
+                        <div class="acordion__wraper">
+
+                            <button class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div>
+                            </button>
+
+                            <div class="panel">
+                                <h5>Izgovor</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+
+                            <button class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div></button>
+                            <div class="panel">
+                                <h5>Motorika</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+
+                            <button class="accordion accordion__3">FLOOR TIME METODA <div><img
+                                        src="./images/arrow-right.svg" alt="arrow">
+                                </div></button>
+                            <div class="panel">
+                                <h5>Učenje kroz igru</h5>
+                                <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
+                                    In its
+                                    historic core is the Kremlin, a complex that’s home to the president and tsarist
+                                    treasures
+                                    in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home
+                                    to
+                                    Lenin’s Mausoleum, the State Historical </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="o__meni">
+        <div class="girl">
+            <img class="layer" data-speed="-2" src="./images/logoped-logopedski-tretmani-logoped-borča-devojcica.png"
+                alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+        </div>
+        <div class="container">
+            <h3>O meni</h3>
+            <div class="tedy">
+                <img src="images/logoped-logopedski-tretmani-logoped-borča-tedy.svg"
+                    alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+            </div>
+
+            <div class="our_team">
+                <div class="pic">
+                    <img src="./images/team4.jpg" alt="logoped-logopedski-tretmani-logoped-borča-team">
+                    <div class="social">
+                        <ul class="social__icon">
+                            <li>
+                                <!-- <a href="#"><img src="./images/social/facebook.svg"
+                                        alt="logoped-logopedski-tretmani-logoped-borča-fecebook"></a> -->
+                                <a href="#">
+                                    <svg style="fill:#19aa5f;" version="1.1" id="Capa_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 167.657 167.657"
+                                        style="enable-background:new 0 0 167.657 167.657;" xml:space="preserve">
+                                        <g>
+                                            <path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626
+		v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006
+		c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154
+		C167.657,37.881,130.125,0.349,83.829,0.349z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- <a href="#"><img src="./images/social/instagram.svg"
+                                        alt="logoped-logopedski-tretmani-logoped-borča-instagram"></a> -->
+                                <a href="#">
+                                    <svg fill="#19aa5f" height="512pt" viewBox="0 0 512 512" width="512pt"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0" />
+                                        <path
+                                            d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0" />
+                                        <path
+                                            d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- <a href="#"><img src="./images/social/pinterest.svg"
+                                        alt="logoped-logopedski-tretmani-logoped-borča-pinterest"></a> -->
+
+                                <a href="#">
+                                    <svg style="fill:#19aa5f;" version="1.1" id="Capa_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="34px" height="34px" viewBox="0 0 34 34"
+                                        style="enable-background:new 0 0 34 34;" xml:space="preserve">
+                                        <g>
+                                            <path d="M17,0C7.611,0,0,7.61,0,17c0,9.391,7.611,17,17,17c9.389,0,17-7.609,17-17C34,7.61,26.389,0,17,0z M28.211,17.595
+                                                   c-1.795,3.79-6.324,5.89-10.521,4.636c0.346,2.484-0.535,5.512-3.253,6.435c-1.299,0.44-2.715,0.242-3.945-0.292
+                                                   c-1.342-0.58-0.622-2.862-0.734-4.014c0.818,0.172,1.604,1.002,2.489,0.607c0.765-0.338,0.784-1.979,0.812-2.662
+                                                   c0.096-2.295-0.076-4.619-0.076-6.917c0-0.77,0-1.539,0-2.308c0-0.315,0-0.632,0-0.948c0-0.391,0.021-0.332,0.381-0.395
+                                                   c0.964-0.165,1.978-0.113,2.947-0.038c0.276,0.022,0.551,0.049,0.827,0.082c0.35,0.044,0.309-0.035,0.309,0.385
+                                                   c0,0.687,0,1.373,0,2.058c0,1.373,0,2.744,0,4.115c0,0.525,0.433,0.509,0.92,0.622c0.287,0.066,0.578,0.117,0.871,0.146
+                                                   c0.527,0.053,1.062,0.037,1.582-0.056c0.893-0.157,1.734-0.55,2.399-1.141c1.271-1.128,1.571-2.852,1.112-4.409
+                                                   c-1.107-3.764-6.064-5.286-9.724-4.403c-3.93,0.948-7.069,5.203-4.106,8.637c-0.886,0.757-1.649,1.656-2.685,2.24
+                                                   C7.563,20.12,7.3,20.241,7.028,20.336c-0.151-0.156-0.293-0.325-0.424-0.499c-0.271-0.356-0.5-0.744-0.689-1.146
+                                                   c-0.854-1.806-0.99-3.915-0.633-5.851c0.58-3.148,2.662-5.484,5.725-6.699c5.102-2.019,12.416-1.192,16.021,3.105
+                                                   C28.949,11.543,29.488,14.896,28.211,17.595z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team__info">
+                        <h4>Miljana Mihailović-Vuletić</h4>
+                        <span class="post">Logoped</span>
+                    </div>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit fuga eius optio
+                    earum neque dolores totam consectetur rem minima magnam. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ea eum explicabo et quam iusto. Blanditiis voluptate debitis quasi possimus illum!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="visitUs"> -->
+    <section class="discover__us__2">
+        <div class="img layer__2" data-speed="2"></div>
+        <!-- <div class="img"></div> -->
+        <div class="discover_text">
+            <h4>Posetite nas još danas</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aperiam est nemo, rerum aliquid
+                voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio a voluptatum similique
+                non vitae. Incidunt distinctio placeat soluta laudantium amet!</p>
+            <div class="link">
+                <a href="kontakt.html" class="left">Kontak</a>
+                <a href="o nama.html" class="right">O nama</a>
+            </div>
+        </div>
+    </section>
+    <section class="helper" style="width:100%;height:400px;background:red"></section>
+
+
+    <!-- svg -->
+
+    <!-- <svg display="none" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px"
+        viewBox="0 0 496.736 496.736" style="enable-background:new 0 0 496.736 496.736;" xml:space="preserve"
+        sodipodi:docname="logoped-logopedski-tretmani-logoped-borca-deca-uce-kroz-igru-ljuljaska.svg"
+        inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+        <metadata id="metadata43">
+            <rdf:RDF>
+                <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                </cc:Work>
+            </rdf:RDF>
+        </metadata>
+        <defs id="defs41" />
+        <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+            gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+            inkscape:window-width="1366" inkscape:window-height="706" id="namedview39" showgrid="false"
+            inkscape:zoom="0.47510147" inkscape:cx="248.368" inkscape:cy="248.368" inkscape:window-x="-8"
+            inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="Capa_1" />
+        <g id="XMLID_36_" style="fill:#e21c3f;fill-opacity:1">
+            <path id="XMLID_41_" class="svg__deo"
+                d="M410.998,11.299C409.859,4.765,404.175,0,397.535,0H101.101c-6.623,0-12.273,4.742-13.447,11.248   L4.184,476.832c-1.653,9.191,4.474,17.979,13.661,19.632c9.053,1.636,17.973-4.344,19.64-13.67l80.497-448.962h55.358   l-12.854,179.174c-2.875-0.025-5.781,0.404-8.457,1.932c-8.143,4.602-11.002,14.918-6.393,23.053l11.596,20.484l-5.336,74.393   c3.635-3.782,8.078-6.864,13.381-8.665l4.311-1.46l2.693-37.665l7.187,12.688c2.955,5.228,8.473,8.5,14.484,8.581   c0.084,0,0.15,0,0.232,0c4.477,0,8.689-1.769,11.811-4.815c0,2.544,0,23.829,0,26.72l-35.285,11.977   c-8.639,2.931-13.396,12.183-10.754,20.921l18.568,61.318c2.693,8.879,12.076,14.016,21.096,11.283   c8.938-2.71,13.99-12.15,11.283-21.096l-13.828-45.65l33.369-11.324c1.371,0,36.408,0,37.812,0l31.388,10.654l-13.826,45.652   c-2.711,8.945,2.346,18.385,11.281,21.094c8.985,2.727,18.403-2.404,21.096-11.282l18.566-61.32   c2.645-8.737-2.115-17.987-10.754-20.921l-35.435-12.024c0-3.163,0-23.804,0-26.86c3.141,3.146,7.402,5.006,11.963,5.006   c0.082,0,0.148,0,0.229,0c6.013-0.083,11.531-3.354,14.489-8.582l7.365-13.01l2.578,38.002l4.246,1.447   c5.301,1.799,9.762,4.88,13.396,8.671l-5.072-74.889l11.316-19.995c4.609-8.137,1.75-18.452-6.393-23.053   c-2.529-1.438-5.254-1.917-7.978-1.966L324.636,33.832h55.966l78.63,448.896c1.62,9.191,10.225,15.388,19.592,13.744   c9.203-1.611,15.348-10.374,13.744-19.574L410.998,11.299z M302.07,255.244l-12.008-19.905   c-2.412-15.065-15.361-26.612-31.122-26.612h-21.31c-16.139,0-29.289,12.118-31.236,27.711l-11.747,19.477l-17.987-31.783   l13.643-190.299h117.369l12.785,188.912L302.07,255.244z"
+                style="fill:#e21c3f;fill-opacity:1" />
+            <path id="XMLID_40_"
+                d="M352.948,365.377l-5.334,17.625c7.119-1.991,12.455-8.251,12.455-16.016c0-5.046-2.313-9.448-5.814-12.546   C354.369,358.051,354.056,361.735,352.948,365.377z"
+                style="fill:#e21c3f;fill-opacity:1" />
+            <path id="XMLID_39_"
+                d="M142.464,354.441c-3.502,3.098-5.816,7.5-5.816,12.546c0,7.682,5.22,13.909,12.241,15.974l-5.121-16.916   C142.597,362.171,142.267,358.265,142.464,354.441z"
+                style="fill:#e21c3f;fill-opacity:1" />
+            <path id="XMLID_38_"
+                d="M218.005,377.765l1.867,6.137h56.775l2.066-6.805c-4.791-1.627-24.978-8.352-29.619-10.299   C244.189,369.11,223.142,376.023,218.005,377.765z"
+                style="fill:#e21c3f;fill-opacity:1" />
+            <path id="XMLID_37_"
+                d="M248.367,111.281c-22.384,0-40.538,18.146-40.538,40.529s18.154,40.529,40.538,40.529   c22.385,0,40.538-18.146,40.538-40.529S270.752,111.281,248.367,111.281z"
+                style="fill:#e21c3f;fill-opacity:1" />
+        </g>
+        <g id="g8">
+        </g>
+        <g id="g10">
+        </g>
+        <g id="g12">
+        </g>
+        <g id="g14">
+        </g>
+        <g id="g16">
+        </g>
+        <g id="g18">
+        </g>
+        <g id="g20">
+        </g>
+        <g id="g22">
+        </g>
+        <g id="g24">
+        </g>
+        <g id="g26">
+        </g>
+        <g id="g28">
+        </g>
+        <g id="g30">
+        </g>
+        <g id="g32">
+        </g>
+        <g id="g34">
+        </g>
+        <g id="g36">
+        </g>
+    </svg> -->
+    <!-- svg -->
 
 
     <script src="./js/main.js"></script>
@@ -304,6 +952,41 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#lightSlider").lightSlider();
+        });
+    </script>
+    <!-- LIGHT SLIDER 2 -->
+
+    <script>
+        $('.image-gallery').lightSlider({
+            gallery: false,
+            item: 2,
+            auto: true,
+            loop: false,
+            pager: false,
+            pause: 9000,
+            speed: 9000,
+            slideMargin: 30,
+            controls: false,
+            mode: "slide",
+            onSliderLoad: function () {
+                $('.image-gallery').removeClass('hidden');
+            }
+        });
+    </script>
+    <!-- LIGHT SLIDER 3 -->
+
+    <script>
+        $('.image-gallery-2').lightSlider({
+            gallery: false,
+            item: 3,
+            auto: true,
+            loop: true,
+            pager: false,
+            pause: 5000,
+            speed: 4000,
+            slideMargin: 10,
+            controls: false,
+            mode: "slide"
         });
     </script>
 </body>

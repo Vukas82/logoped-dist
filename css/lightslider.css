@@ -100,7 +100,7 @@
 }
 
 .lSSlideOuter .lSPager.lSpg>li a {
-    background-color: #222222;
+    background-color: #ffa500;
     border-radius: 30px;
     display: inline-block;
     height: 8px;
@@ -115,7 +115,7 @@
 
 .lSSlideOuter .lSPager.lSpg>li:hover a,
 .lSSlideOuter .lSPager.lSpg>li.active a {
-    background-color: #428bca;
+    background-color: #E21C3F;
 }
 
 .lSSlideOuter .media {
