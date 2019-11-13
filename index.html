@@ -9,7 +9,7 @@
     <title>Logoped, Logopedski tretmani, Logoped Borča</title>
     <link rel="stylesheet" href="css/pure.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-vendor.css">
+    <!-- <link rel="stylesheet" href="css/style-vendor.css"> -->
     <!-- light slider -->
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -75,13 +75,13 @@
                     <li id="o nama"><a href="o nama.html">
                             <h2>O nama</h2>
                         </a></li>
-                    <li><a href="#">
+                    <li id="galerija__nav"><a href="#">
                             <h2>Galerija</h2>
                         </a></li>
-                    <li><a href="#">
+                    <li id="cenovnik__nav"><a href="#">
                             <h2>Cenovnik</h2>
                         </a></li>
-                    <li><a href="kontakt.html">
+                    <li id="kontakt__nav"><a href="kontakt.html">
                             <h2>Kontakt</h2>
                         </a></li>
                 </ul>
@@ -89,6 +89,7 @@
         </div>
         <!-- </div> -->
     </header>
+
 
     <!-- S L I D E R -->
 
@@ -965,10 +966,209 @@
 
     </section>
 
+    <section id="gallery">
+        <div class="container">
+            <h3>Galerija</h3>
+            <div class="tedy">
+                <img src="images/logoped-logopedski-tretmani-logoped-borča-tedy.svg"
+                    alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+            </div>
+        </div>
+
+
+
+
+        <!-- gallery -->
+        <div class="container__gallery">
+            <div class="top">
+                <ul>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-1.jpg"
+                            onclick="openModal();currentSlide(1)" class="hover-shadow">
+
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-2.jpg"
+                            onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-3.jpg"
+                            onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-4.jpg"
+                            onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-1.jpg"
+                            onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-2.jpg"
+                            onclick="openModal();currentSlide(6)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-3.jpg"
+                            onclick="openModal();currentSlide(7)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+                    <li><img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-4.jpg"
+                            onclick="openModal();currentSlide(8)" class="hover-shadow">
+                        <p>Siblings having fun</p>
+                    </li>
+
+                </ul>
+
+                <!-- light box -->
+
+            </div>
+        </div>
+        <!-- gallery -->
+        <!-- gallery -->
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides trans">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides trans">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-artikulacija-4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/Logoped-logopedska-ordinacija-logoped-borča-mucanje-4.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <!-- <div class="column">
+                    <img class="demo"
+                        src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"
+                        onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                    <img class="demo"
+                        src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"
+                        onclick="currentSlide(2)" alt="Snow">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"
+                        onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"
+                        onclick="currentSlide(4)" alt="Lights">
+                </div> -->
+            </div>
+        </div>
+
+
+        <!-- gallery -->
+        <!-- gallery -->
+        <script>
+            // Open the Modal
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            // Close the Modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+        <!-- gallery -->
+
+
+    </section>
+
+
+
+    <section id="contact" style="width: 100%; height:900px; background-color: #19aa5f;">
+
+        <svg id="curveDownColor1" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+            height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+    </section>
+
 
     <!-- svg -->
 
-    <!-- <svg display="none" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+    <!-- <svg display=" none" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
         xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px"
@@ -1036,7 +1236,7 @@
         </g>
         <g id="g36">
         </g>
-    </svg> -->
+        </svg> -->
     <!-- svg -->
 
 
