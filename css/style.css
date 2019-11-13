@@ -3,6 +3,15 @@ html {
   box-sizing: border-box;
   overflow-x: hidden; }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 56px;
+  font-family: 'Baloo', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; }
+
 .container {
   width: 1110px;
   margin: auto; }
@@ -28,6 +37,14 @@ html {
 
 .hidden {
   display: none; }
+
+.tedy {
+  width: 50px;
+  height: 50px;
+  margin: auto; }
+  .tedy img {
+    width: 100%;
+    height: 100%; }
 
 [data-animation^="animated"] {
   visibility: hidden; }
@@ -3842,6 +3859,156 @@ header {
       margin-left: 10px; }
     .discover__us__2 .discover_text .link .right:hover {
       background-color: #ffa500; }
+
+#cenovnik {
+  position: relative;
+  background-image: url("../images/bggreen.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  box-sizing: border-box; }
+  #cenovnik .clouds {
+    width: 300px;
+    height: 150px;
+    position: absolute; }
+    #cenovnik .clouds svg {
+      height: 100%;
+      width: 100%; }
+  #cenovnik .cloud__1 {
+    left: 0px;
+    top: 0px; }
+  #cenovnik .cloud__2 {
+    left: 120px;
+    top: 120px; }
+  #cenovnik .cloud__3 {
+    right: 0px;
+    top: 30px; }
+  #cenovnik .cloud__4 {
+    right: 50px;
+    top: 100px; }
+  #cenovnik .container {
+    padding-top: 60px; }
+    #cenovnik .container .price__holder {
+      padding: 30px 0;
+      margin: 30px 0;
+      margin-top: 60px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease-out 0s;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      #cenovnik .container .price__holder .price {
+        background-color: #fdf5e6;
+        width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+        box-sizing: border-box; }
+        #cenovnik .container .price__holder .price .pricing__header {
+          font-weight: 400;
+          color: #666;
+          overflow-x: hidden !important;
+          font-family: 'Lato', serif;
+          position: relative; }
+          #cenovnik .container .price__holder .price .pricing__header .title {
+            font-size: 30px;
+            display: block;
+            padding-bottom: 20px;
+            letter-spacing: -1px;
+            font-family: Baloo; }
+          #cenovnik .container .price__holder .price .pricing__header .price__value {
+            padding: 8px 0;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 45px;
+            color: #E21C3F; }
+          #cenovnik .container .price__holder .price .pricing__header .duration {
+            color: #666;
+            overflow-x: hidden !important;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Lato', serif;
+            font-size: 15px;
+            margin-top: 10px;
+            line-height: 24px;
+            font-weight: 900;
+            display: block; }
+        #cenovnik .container .price__holder .price .pricing__content {
+          padding: 0 5%;
+          margin: 20px 0 20px 0;
+          list-style: none;
+          color: #666;
+          font-size: 16px;
+          line-height: 30px;
+          position: relative; }
+          #cenovnik .container .price__holder .price .pricing__content li {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #e6e5e5;
+            font-size: 15px; }
+        #cenovnik .container .price__holder .price .btn {
+          display: inline-block;
+          position: relative;
+          background: transparent;
+          background-color: #E21C3F;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          border-radius: 25px 10px;
+          font-family: Baloo;
+          padding: 20px;
+          transition: background 0.7s ease-out;
+          text-decoration: none;
+          border: 0px;
+          margin-bottom: 0;
+          font-weight: 400;
+          line-height: 1.42857143;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          z-index: 1000;
+          cursor: pointer; }
+        #cenovnik .container .price__holder .price .btn:active {
+          background-image: none;
+          outline: 0;
+          -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+        #cenovnik .container .price__holder .price .btn:hover {
+          background-color: #ffa500; }
+      #cenovnik .container .price__holder .price:before,
+      #cenovnik .container .price__holder .price:after {
+        content: "";
+        width: 75%;
+        height: 52px;
+        margin: 0 auto;
+        position: absolute;
+        top: -32px;
+        left: 0;
+        right: 0;
+        transform: rotate(-3deg) skew(-3deg);
+        z-index: 0;
+        background-color: inherit;
+        box-sizing: border-box; }
+      #cenovnik .container .price__holder .price:after {
+        top: unset;
+        bottom: -32px; }
+      #cenovnik .container .price__holder .price:hover {
+        background-color: #19aa5f; }
+        #cenovnik .container .price__holder .price:hover .pricing__header {
+          color: #fff !important; }
+        #cenovnik .container .price__holder .price:hover .price__value {
+          color: #fff !important; }
+        #cenovnik .container .price__holder .price:hover .duration {
+          color: #fff !important; }
+        #cenovnik .container .price__holder .price:hover ul li {
+          color: #fff !important; }
+      #cenovnik .container .price__holder .price:before,
+      #cenovnik .container .price__holder .price:after:hover {
+        background-color: #19aa5f !important; }
 
 .contact__form {
   padding: 50px 0; }
