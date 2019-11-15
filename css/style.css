@@ -3861,6 +3861,7 @@ header {
       background-color: #ffa500; }
 
 #cenovnik {
+  padding-top: 30px;
   position: relative;
   background-image: url("../images/bggreen.png");
   background-position: center;
@@ -3882,8 +3883,8 @@ header {
     left: 120px;
     top: 120px; }
   #cenovnik .cloud__3 {
-    right: 0px;
-    top: 30px; }
+    right: 200px;
+    top: -30px; }
   #cenovnik .cloud__4 {
     right: 50px;
     top: 100px; }
@@ -4241,211 +4242,345 @@ header {
   fill: #E21C3F; }
 
 #contact {
-  background-color: #fdf5e6;
+  background-image: linear-gradient(#fdf5e6, #fff);
   width: 100%;
-  height: 900px; }
+  height: auto;
+  position: relative; }
+  #contact .puz {
+    position: absolute;
+    bottom: 100px;
+    left: 2px;
+    width: 100%;
+    height: 100%; }
+    #contact .puz .img {
+      width: 30%;
+      height: 90%;
+      background-image: url(../images/logoped-logopedska-ordinacija-logoped-borca-kontakt-puz.png);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: unset; }
   #contact .container {
-    padding-top: 10px; }
-
-.contact__form {
-  padding: 50px 0; }
-  .contact__form .contact {
-    margin: auto;
-    display: flex;
-    flex-direction: row; }
-    .contact__form .contact .contact__left {
-      width: 35%; }
-      .contact__form .contact .contact__left .contact__about .heading h5 {
-        margin-bottom: 20px;
-        font-size: 16px; }
-      .contact__form .contact .contact__left .contact__about .adress {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: flex-start; }
-        .contact__form .contact .contact__left .contact__about .adress .contact__span {
-          width: 13px;
-          height: 13px;
-          margin-right: 13px; }
-          .contact__form .contact .contact__left .contact__about .adress .contact__span img {
-            width: 100%;
-            height: 100%; }
-          .contact__form .contact .contact__left .contact__about .adress .contact__span svg {
-            width: 100%;
-            height: 100%; }
-        .contact__form .contact .contact__left .contact__about .adress .contact__p {
-          font-size: 13px;
-          margin: 7px 0px; }
-          .contact__form .contact .contact__left .contact__about .adress .contact__p a {
-            font-size: 13px;
-            font-weight: 900;
-            text-decoration: none;
-            color: red; }
-          .contact__form .contact .contact__left .contact__about .adress .contact__p a:hover {
-            color: red; }
-      .contact__form .contact .contact__left .contact__working__time {
-        display: flex;
-        flex-direction: column; }
-        .contact__form .contact .contact__left .contact__working__time .contact__inner {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          padding-right: 100px; }
-          .contact__form .contact .contact__left .contact__working__time .contact__inner .left p {
-            font-size: 13px; }
-          .contact__form .contact .contact__left .contact__working__time .contact__inner .right p {
-            font-size: 13px; }
-    .contact__form .contact .contact__right {
-      width: 65%; }
-      .contact__form .contact .contact__right .half {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between; }
-        .contact__form .contact .contact__right .half input {
-          background-color: #f4f4f4;
-          -webkit-border-radius: 0px;
-          -khtml-border-radius: 0px;
-          -moz-border-radius: 0px;
-          -ms-border-radius: 0px;
-          -o-border-radius: 0px;
-          border-radius: 0;
-          border: none;
-          color: #9b9b9b;
-          padding: 8px 20px;
-          box-sizing: border-box;
-          line-height: normal;
-          height: 51px;
-          font-size: 13px;
-          -webkit-transition: all .3s linear 0ms;
-          -khtml-transition: all .3s linear 0ms;
-          -moz-transition: all .3s linear 0ms;
-          -ms-transition: all .3s linear 0ms;
-          -o-transition: all .3s linear 0ms;
-          transition: all .3s linear 0ms;
-          -webkit-box-shadow: none;
-          -khtml-box-shadow: none;
-          -moz-box-shadow: none;
-          -ms-box-shadow: none;
-          -o-box-shadow: none;
-          box-shadow: none;
-          width: 49%;
-          outline: none; }
-        .contact__form .contact .contact__right .half input:focus {
-          outline: 1px solid red; }
-      .contact__form .contact .contact__right .full textarea {
-        background-color: #f4f4f4;
-        box-sizing: border-box;
-        border: none;
-        color: #9b9b9b;
-        line-height: normal;
-        padding: 8px 20px;
-        font-size: 13px;
-        -webkit-transition: all .3s linear 0ms;
-        -khtml-transition: all .3s linear 0ms;
-        -moz-transition: all .3s linear 0ms;
-        -ms-transition: all .3s linear 0ms;
-        -o-transition: all .3s linear 0ms;
-        transition: all .3s linear 0ms;
-        -webkit-box-shadow: none;
-        -khtml-box-shadow: none;
-        -moz-box-shadow: none;
-        -ms-box-shadow: none;
-        -o-box-shadow: none;
-        box-shadow: none;
-        width: 100%;
-        outline: none; }
-      .contact__form .contact .contact__right .full textarea:focus {
-        outline: 1px solid red; }
-      .contact__form .contact .contact__right button {
-        width: 100%;
-        background-color: red;
-        font-size: 14px;
-        border: 2px solid red;
-        color: #fff;
-        text-transform: capitalize;
-        padding: 0 30px;
-        line-height: 47px;
-        -webkit-transition: all .3s linear 0ms;
-        -khtml-transition: all .3s linear 0ms;
-        -moz-transition: all .3s linear 0ms;
-        -ms-transition: all .3s linear 0ms;
-        -o-transition: all .3s linear 0ms;
-        transition: all .3s linear 0ms;
-        -webkit-border-radius: 1px;
-        -khtml-border-radius: 1px;
-        -moz-border-radius: 1px;
-        -ms-border-radius: 1px;
-        -o-border-radius: 1px;
-        border-radius: 1px;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        cursor: pointer;
-        position: relative;
-        font-weight: 700; }
-      .contact__form .contact .contact__right button:hover {
-        background-color: blue;
-        border-color: blue; }
-      .contact__form .contact .contact__right .email-invalid {
-        color: red;
-        font-size: 12px; }
-      .contact__form .contact .contact__right .wrong {
-        color: red; }
-      .contact__form .contact .contact__right .pure-form fieldset {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        width: 50%; }
-      .contact__form .contact .contact__right #email {
+    padding-top: 10px;
+    margin-top: 50px;
+    display: flex; }
+    #contact .container h5 {
+      color: #333;
+      font-size: 32px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: 'Baloo', sans-serif;
+      font-weight: 500;
+      line-height: 1.1; }
+    #contact .container .contakt__form__wraper {
+      padding: 50px 0;
+      padding-top: 0;
+      width: 40%; }
+      #contact .container .contakt__form__wraper .contact__right {
         width: 100%; }
-      .contact__form .contact .contact__right .thankyou_message h2 {
-        text-align: center; }
+        #contact .container .contakt__form__wraper .contact__right form {
+          position: relative;
+          width: 100%; }
+          #contact .container .contakt__form__wraper .contact__right form .form-elements {
+            width: 100%; }
+            #contact .container .contakt__form__wraper .contact__right form .form-elements .half {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between; }
+              #contact .container .contakt__form__wraper .contact__right form .form-elements .half label {
+                font-weight: 400;
+                margin-top: 10px;
+                display: block;
+                max-width: 100%;
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: #666;
+                font-family: 'Lato', serif; }
+              #contact .container .contakt__form__wraper .contact__right form .form-elements .half input {
+                width: 100%;
+                height: 52px;
+                background-color: #fff;
+                -webkit-border-radius: 10px;
+                -khtml-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                border-radius: 10;
+                border: 2px solid #19aa5f;
+                color: #9b9b9b;
+                padding: 8px 20px;
+                box-sizing: border-box;
+                line-height: normal;
+                font-size: 17px;
+                -webkit-transition: all .3s linear 0ms;
+                -khtml-transition: all .3s linear 0ms;
+                -moz-transition: all .3s linear 0ms;
+                -ms-transition: all .3s linear 0ms;
+                -o-transition: all .3s linear 0ms;
+                transition: all .3s linear 0ms;
+                -webkit-box-shadow: none;
+                -khtml-box-shadow: none;
+                -moz-box-shadow: none;
+                -ms-box-shadow: none;
+                -o-box-shadow: none;
+                box-shadow: none;
+                outline: none; }
+              #contact .container .contakt__form__wraper .contact__right form .form-elements .half input:focus {
+                border: none;
+                box-shadow: 0 0 0 1pt #E21C3F; }
+            #contact .container .contakt__form__wraper .contact__right form .form-elements .email-invalid {
+              color: red;
+              font-size: 12px; }
+            #contact .container .contakt__form__wraper .contact__right form .form-elements .wrong {
+              color: red; }
+            #contact .container .contakt__form__wraper .contact__right form .form-elements .pure-form fieldset {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              width: 50%; }
+            #contact .container .contakt__form__wraper .contact__right form .form-elements #email {
+              width: 100%; }
+          #contact .container .contakt__form__wraper .contact__right form .full #message {
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            border: none;
+            color: #9b9b9b;
+            line-height: normal;
+            padding: 8px 20px;
+            font-size: 13px;
+            -webkit-transition: all .3s linear 0ms;
+            -khtml-transition: all .3s linear 0ms;
+            -moz-transition: all .3s linear 0ms;
+            -ms-transition: all .3s linear 0ms;
+            -o-transition: all .3s linear 0ms;
+            transition: all .3s linear 0ms;
+            -webkit-box-shadow: none;
+            -khtml-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            outline: none;
+            background-color: #fff;
+            -webkit-border-radius: 10px;
+            -khtml-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10;
+            border: 2px solid #19aa5f; }
+          #contact .container .contakt__form__wraper .contact__right form .full textarea:focus {
+            outline: 1px solid red; }
+          #contact .container .contakt__form__wraper .contact__right form button {
+            background-color: #E21C3F;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            border-radius: 25px 10px;
+            font-family: Baloo;
+            padding: 20px 30px;
+            transition: background 0.7s ease-out;
+            text-decoration: none;
+            border: 0px; }
+          #contact .container .contakt__form__wraper .contact__right form button:hover {
+            background-color: #ffa500; }
+          #contact .container .contakt__form__wraper .contact__right form .agreemment {
+            position: absolute;
+            bottom: 0px;
+            left: 0px; }
+          #contact .container .contakt__form__wraper .contact__right form .thankyou_message {
+            transition: opacity 1s ease-out;
+            opacity: 0;
+            height: 0;
+            overflow: hidden; }
+            #contact .container .contakt__form__wraper .contact__right form .thankyou_message h2 {
+              text-align: center;
+              font-family: Baloo;
+              font-weight: 400;
+              color: #19aa5f; }
+          #contact .container .contakt__form__wraper .contact__right form .show {
+            display: block;
+            opacity: 1;
+            height: auto; }
+          #contact .container .contakt__form__wraper .contact__right form .contact__p {
+            position: absolute;
+            bottom: 0px;
+            left: 15px;
+            font-size: 13px; }
+    #contact .container .info_right {
+      width: 60%;
+      height: auto; }
+      #contact .container .info_right .info {
+        width: 60%;
+        height: auto;
+        margin: auto;
+        margin-top: 15px;
+        background-color: green;
+        box-shadow: 10px 0px 0px 0px rgba(153, 153, 153, 0.22);
+        background: #fff;
+        border-radius: 55px 160px;
+        padding: 60px;
+        border: 0; }
+        #contact .container .info_right .info .info__wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          #contact .container .info_right .info .info__wrap .adress {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0; }
+            #contact .container .info_right .info .info__wrap .adress svg {
+              width: 20px; }
+            #contact .container .info_right .info .info__wrap .adress h6,
+            #contact .container .info_right .info .info__wrap .adress p {
+              font-weight: 400;
+              margin-top: 10px;
+              margin-left: 10px;
+              max-width: 100%;
+              margin-bottom: 5px;
+              color: #666;
+              font-family: 'Lato', serif;
+              font-size: 13px; }
+            #contact .container .info_right .info .info__wrap .adress .contact__span {
+              width: 13px; }
+              #contact .container .info_right .info .info__wrap .adress .contact__span img {
+                width: 100%; }
+            #contact .container .info_right .info .info__wrap .adress .contact__p a {
+              text-decoration: none;
+              color: #E21C3F;
+              margin-right: 10px; }
+      #contact .container .info_right .mapa {
+        width: 100%;
+        padding: 60px;
+        height: auto; }
+  #contact .beetwen {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/logoped-logopedska-ordinacija-logoped-borca-kontakt-puz-footer-bottom-bg.jpg");
+    background-repeat: repeat-x; }
 
-@media (max-width: 1110px) {
-  .container {
-    width: 100%; }
-  .contact__form {
-    padding-right: 30px;
-    padding-left: 30px; } }
-
-@media (max-width: 989px) {
-  .contact__form .contact__inner {
-    padding-right: 30px !important; }
-  .contact__form .contact .contact__right {
-    width: 65%; }
-    .contact__form .contact .contact__right .half {
+footer {
+  background-image: linear-gradient(#fff, #ffdfa5, #ffdfa5, #ffdfa5);
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  font-family: 'Lato', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    footer .container a {
+      text-decoration: none;
+      color: #E21C3F; }
+    footer .container .footer__left {
       width: 100%;
+      height: 300px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between; }
-      .contact__form .contact .contact__right .half input {
-        width: 100%;
-        margin-bottom: 20px; }
-      .contact__form .contact .contact__right .half .pure-group {
-        width: 100%; } }
-
-@media (max-width: 700px) {
-  .contact__form {
-    padding-right: 10px;
-    padding-left: 10px; }
-    .contact__form .contact {
-      flex-direction: column; }
-      .contact__form .contact .contact__left {
-        width: 100%; }
-        .contact__form .contact .contact__left .contact__about .heading h5 {
-          text-align: center; }
-        .contact__form .contact .contact__left .contact__about :nth-child(2) {
-          display: none; }
-        .contact__form .contact .contact__left .contact__about :nth-child(3) {
-          display: none; }
-        .contact__form .contact .contact__left .contact__about :nth-child(4) {
-          display: none; }
-        .contact__form .contact .contact__left .contact__about .contact__working__time {
-          display: none; }
-      .contact__form .contact .contact__right {
-        margin: auto;
-        width: 100%; } }
+      justify-content: center; }
+      footer .container .footer__left ul {
+        padding-left: 0;
+        list-style: none;
+        color: #666;
+        font-size: 16px;
+        line-height: 30px; }
+        footer .container .footer__left ul li {
+          border-bottom: 1px solid #cecece;
+          line-height: 35px !important; }
+          footer .container .footer__left ul li img,
+          footer .container .footer__left ul li svg {
+            width: 15px;
+            height: 15px;
+            margin: 0;
+            margin-right: 15px; }
+          footer .container .footer__left ul li h6 {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 30px;
+            margin: 0;
+            font-weight: normal; }
+        footer .container .footer__left ul li:hover a {
+          color: #19aa5f; }
+    footer .container .footer__center {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      footer .container .footer__center .social__icon ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 10px; }
+        footer .container .footer__center .social__icon ul li a img,
+        footer .container .footer__center .social__icon ul li a svg {
+          width: 30px;
+          height: 30px;
+          transition: all .3s ease-in; }
+      footer .container .footer__center .social__icon ul li:hover svg {
+        fill: #19aa5f;
+        transform: scale(1.1); }
+    footer .container .footer__right {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      footer .container .footer__right ul li {
+        list-style: none;
+        padding-bottom: 10px; }
+        footer .container .footer__right ul li a {
+          text-decoration: none; }
+      footer .container .footer__right ul li:hover a {
+        color: #19aa5f; }
+  footer .credits {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+    width: 1110px;
+    margin: auto; }
+    footer .credits strong {
+      color: #E21C3F; }
+    footer .credits a {
+      color: #E21C3F; }
+  footer .credits:hover a {
+    color: black; }
+  footer .puz_2 {
+    height: 39%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 74px;
+    width: 30%;
+    z-index: 0; }
+    footer .puz_2 .img {
+      width: 50%;
+      height: 60%;
+      background-image: url(../images/logoped-logopedska-ordinacija-logoped-borca-kontakt-puz.png);
+      background-attachment: fixed;
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: unset;
+      position: absolute;
+      left: -303px;
+      bottom: 0; }
