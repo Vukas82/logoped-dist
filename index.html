@@ -508,6 +508,9 @@
                 </ul>
             </div>
             <div class="tab-content">
+
+                <!-- ----------------------------------TAB 3-------------------------------------------------- -->
+
                 <div id="tab1" class="active__tab tab-panel">
                     <div class="left__tab__content">
                         <h3>Ukratko o svemu</h3>
@@ -652,6 +655,9 @@
                     </div>
 
                 </div>
+
+                <!-- ----------------------------------TAB 2-------------------------------------------------- -->
+
                 <div id="tab2" class="tab-panel__2 hidden">
                     <h4>Naše svakodnevne aktivnosti</h4>
 
@@ -662,12 +668,12 @@
                     <div class="acordion">
                         <div class="acordion__wraper">
 
-                            <button class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div><img
-                                        src="./images/arrow-right.svg" alt="arrow">
+                            <button id="toggle-button__1" class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div>
+                                    <img src="./images/arrow-right.svg" alt="arrow">
                                 </div>
                             </button>
 
-                            <div class="panel">
+                            <div class="panel section__1 collapsible">
                                 <h5>Izgovor</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -678,10 +684,10 @@
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
 
-                            <button class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div><img
-                                        src="./images/arrow-right.svg" alt="arrow">
+                            <button id="toggle-button__2" class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div>
+                                    <img src="./images/arrow-right.svg" alt="arrow">
                                 </div></button>
-                            <div class="panel">
+                            <div class="panel section__2 collapsible">
                                 <h5>Motorika</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -692,10 +698,10 @@
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
 
-                            <button class="accordion accordion__3">FLOOR TIME METODA <div><img
+                            <button id="toggle-button__3" class="accordion accordion__3">FLOOR TIME METODA <div><img
                                         src="./images/arrow-right.svg" alt="arrow">
                                 </div></button>
-                            <div class="panel">
+                            <div class="panel section__3 collapsible">
                                 <h5>Učenje kroz igru</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -705,10 +711,13 @@
                                     to
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
+
                         </div>
                     </div>
 
                 </div>
+
+                <!-- ----------------------------------TAB 3-------------------------------------------------- -->
                 <div id="tab3" class="tab-panel__2 tab-panel__2-2 hidden">
                     <h4>Naše svakodnevne aktivnosti</h4>
 
@@ -719,12 +728,12 @@
                     <div class="acordion">
                         <div class="acordion__wraper">
 
-                            <button class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div><img
-                                        src="./images/arrow-right.svg" alt="arrow">
+                            <button id="toggle-button__4" class="accordion accordion__1">VEŽBE ZA RAZVOJ GOVORA <div>
+                                    <img src="./images/arrow-right.svg" alt="arrow">
                                 </div>
                             </button>
 
-                            <div class="panel">
+                            <div class="panel section__4 collapsible">
                                 <h5>Izgovor</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -735,10 +744,10 @@
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
 
-                            <button class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div><img
-                                        src="./images/arrow-right.svg" alt="arrow">
+                            <button id="toggle-button__5" class="accordion accordion__2">VEŽBE ZA RAZVOJ MOTORIKE<div>
+                                    <img src="./images/arrow-right.svg" alt="arrow">
                                 </div></button>
-                            <div class="panel">
+                            <div class="panel section__5 collapsible">
                                 <h5>Motorika</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -749,10 +758,10 @@
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
 
-                            <button class="accordion accordion__3">FLOOR TIME METODA <div><img
+                            <button id="toggle-button__6" class="accordion accordion__3">FLOOR TIME METODA <div><img
                                         src="./images/arrow-right.svg" alt="arrow">
                                 </div></button>
-                            <div class="panel">
+                            <div class="panel section__6 collapsible">
                                 <h5>Učenje kroz igru</h5>
                                 <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.
                                     In its
@@ -762,9 +771,148 @@
                                     to
                                     Lenin’s Mausoleum, the State Historical </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("active__acordion");
+
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+
+                    // --------------------------------------------------------
+
+                    function collapseSection(element) {
+                        // get the height of the element's inner content, regardless of its actual size
+                        var sectionHeight = element.scrollHeight;
+                        // console.log(sectionHeight)
+
+                        // temporarily disable all css transitions
+                        var elementTransition = element.style.transition;
+                        element.style.transition = '';
+
+                        // on the next frame (as soon as the previous style change has taken effect),
+                        // explicitly set the element's height to its current pixel height, so we 
+                        // aren't transitioning out of 'auto'
+                        requestAnimationFrame(function () {
+                            element.style.height = 0 + 'px';
+                            element.style.transition = elementTransition;
+
+                            // on the next frame (as soon as the previous style change has taken effect),
+                            // have the element transition to height: 0
+                            requestAnimationFrame(function () {
+                                element.style.height = sectionHeight + 'px';
+                            });
+                        });
+
+                        // mark the section as "currently collapsed"
+                        element.setAttribute('data-collapsed', 'true');
+                    }
+
+                    function expandSection(element) {
+                        // get the height of the element's inner content, regardless of its actual size
+                        var sectionHeight = element.scrollHeight;
+
+                        // have the element transition to the height of its inner content
+                        element.style.height = sectionHeight + 'px';
+
+                        // when the next css transition finishes (which should be the one we just triggered)
+                        element.addEventListener('transitionend', function (e) {
+                            // remove this event listener so it only gets triggered once
+                            element.removeEventListener('transitionend', arguments.callee);
+
+                            // remove "height" from the element's inline styles, so it can return to its initial value
+                            element.style.height = null;
+                        });
+
+                        // mark the section as "currently not collapsed"
+                        element.setAttribute('data-collapsed', 'false');
+                    }
+
+                    document.querySelector('#toggle-button__1').addEventListener('click', function (e) {
+                        var section__1 = document.querySelector('.section__1.collapsible');
+                        var isCollapsed = section__1.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__1)
+                            section__1.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__1)
+                            console.log(section__1.attributes)
+                        }
+                    });
+
+                    document.querySelector('#toggle-button__2').addEventListener('click', function (e) {
+                        var section__2 = document.querySelector('.section__2.collapsible');
+                        var isCollapsed = section__2.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__2)
+                            section__2.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__2)
+                            console.log(section__2.attributes)
+                        }
+                    });
+                    document.querySelector('#toggle-button__3').addEventListener('click', function (e) {
+                        var section__3 = document.querySelector('.section__3.collapsible');
+                        var isCollapsed = section__3.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__3)
+                            section__3.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__3)
+                        }
+                    });
+                    document.querySelector('#toggle-button__4').addEventListener('click', function (e) {
+                        var section__4 = document.querySelector('.section__4.collapsible');
+                        var isCollapsed = section__4.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__4)
+                            section__4.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__4)
+                        }
+                    });
+                    document.querySelector('#toggle-button__5').addEventListener('click', function (e) {
+                        var section__5 = document.querySelector('.section__5.collapsible');
+                        var isCollapsed = section__5.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__5)
+                            section__5.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__5)
+                        }
+                    });
+                    document.querySelector('#toggle-button__6').addEventListener('click', function (e) {
+                        var section__6 = document.querySelector('.section__6.collapsible');
+                        var isCollapsed = section__6.getAttribute('data-collapsed') === 'true';
+
+                        if (isCollapsed) {
+                            expandSection(section__6)
+                            section__6.setAttribute('data-collapsed', 'false')
+                        } else {
+                            collapseSection(section__6)
+                        }
+                    });
+                </script>
             </div>
         </div>
 
