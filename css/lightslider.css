@@ -275,12 +275,12 @@
 .lSAction>.lSPrev {
     /* background-position: 0 0; */
     transform: rotate(180deg);
-    left: 10px;
+    left: 30px;
 }
 
 .lSAction>.lSNext {
     /* background-position: -38px 0; */
-    right: 10px;
+    right: 30px;
 }
 
 .lSAction>a.disabled {
