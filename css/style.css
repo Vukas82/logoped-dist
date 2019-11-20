@@ -5249,7 +5249,8 @@ header {
 
 @media only screen and (max-width: 576px) {
   #contact {
-    padding-top: 50px; }
+    padding-top: 50px;
+    background-color: #fdf5e6 !important; }
     #contact .puz {
       display: none; }
     #contact .bird {
@@ -5264,10 +5265,11 @@ header {
       width: 100%;
       height: auto; }
       #contact .container .info_right .info {
-        width: 80%;
-        height: auto; }
+        padding: 30px; }
       #contact .container .info_right .mapa iframe {
-        width: 100%; } }
+        width: 100%; }
+  #contact > div.beetwen {
+    display: none; } }
 
 footer {
   background-image: linear-gradient(#fff, #ffdfa5, #ffdfa5, #ffdfa5);
