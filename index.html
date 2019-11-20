@@ -31,7 +31,7 @@
                 </a>
 
             </div>
-            <nav>
+            <nav id="myHeader">
                 <ul>
                     <li id="home" class="hover"><a href="index.html">
                             <h2>Početna</h2>
@@ -85,10 +85,69 @@
                             <h2>Kontakt</h2>
                         </a></li>
                 </ul>
+
+
+                <div class="small-drop-btn" aria-expanded="false" id="btn" onclick="toggle('navbar', 'btn')">
+                    <a href="#header">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                </div>
+
             </nav>
         </div>
         <!-- </div> -->
     </header>
+
+    <!-- nav menu za small screen -->
+    <nav id="nav-small" class="navbar2 nav-small" style="">
+        <!-- <div class="logo">
+                        <img src="/images/logo.svg" alt="logo">
+                    </div> -->
+
+
+        <ul id="navbar" class="navbar-list-expanded" style="display: none">
+
+            <li>
+                <a href="index.html">
+                    <h2><strong>Rana stimulacija</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="reference.html">
+                    <h2><strong>Rana stimulacija</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="zastupnistva.html">
+                    <h2><strong>Razvoj govora kroz igru</strong></h2>
+                </a>
+            </li>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Artikulacija ( izgovor glasova )</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Rad po Montesori metodi</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Mucanje i tikovi</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Priprema za polazak u školu</strong></h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ==========================end small nav -->
 
 
     <!-- S L I D E R -->
@@ -1599,12 +1658,37 @@
     <!-- ==================================================================================== -->
     <!-- LIGHT SLIDER -->
     <script type="text/javascript">
-        $(document).ready(function () {
-            $("#lightSlider").lightSlider({
-                pager: false
+        // $(document).ready(function () {
+        //     $("#lightSlider").lightSlider({
+        //         pager: false
 
-            });
-        });
+        //     });
+        // });
+
+
+
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                $(document).ready(function () {
+                    $("#lightSlider").lightSlider({
+                        item: 2,
+                        controls: false,
+                        pager: false,
+
+                    });
+                });
+
+            } else {
+                $("#lightSlider").lightSlider({
+                    pager: false
+
+                });
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 992px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
     </script>
     <!-- LIGHT SLIDER 2 -->
 
