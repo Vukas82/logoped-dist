@@ -1074,7 +1074,7 @@
                     alt="logoped-logopedski-tretmani-logoped-borča-tedy">
             </div>
             <div class="price__holder">
-                <div class="price">
+                <div class="price price__1">
                     <div class="pricing__header">
                         <span class="title">Testiranje</span>
                         <span class="price__value">1000</span>
@@ -1087,7 +1087,7 @@
                     </ul>
                     <a href="#" class="btn">info</a>
                 </div>
-                <div class="price">
+                <div class="price price__2">
                     <div class="pricing__header">
                         <span class="title">Priprema</span>
                         <span class="price__value">1000</span>
@@ -1100,7 +1100,7 @@
                     </ul>
                     <a href="#" class="btn">info</a>
                 </div>
-                <div class="price">
+                <div class="price price__3">
                     <div class="pricing__header">
                         <span class="title">Izgovor</span>
                         <span class="price__value">1000</span>
@@ -1113,7 +1113,7 @@
                     </ul>
                     <a href="#" class="btn">info</a>
                 </div>
-                <div class="price">
+                <div class="price price__4">
                     <div class="pricing__header">
                         <span class="title">Motorika</span>
                         <span class="price__value">1200</span>
@@ -1676,12 +1676,36 @@
                         pager: false,
 
                     });
+                    $('.image-gallery-2').lightSlider({
+                        gallery: false,
+                        item: 2,
+                        auto: true,
+                        loop: true,
+                        pager: false,
+                        pause: 5000,
+                        speed: 4000,
+                        slideMargin: 10,
+                        controls: false,
+                        mode: "slide"
+                    });
                 });
 
             } else {
                 $("#lightSlider").lightSlider({
                     pager: false
 
+                });
+                $('.image-gallery-2').lightSlider({
+                    gallery: false,
+                    item: 3,
+                    auto: true,
+                    loop: true,
+                    pager: false,
+                    pause: 5000,
+                    speed: 4000,
+                    slideMargin: 10,
+                    controls: false,
+                    mode: "slide"
                 });
             }
         }
@@ -1712,18 +1736,18 @@
     <!-- LIGHT SLIDER 3 -->
 
     <script>
-        $('.image-gallery-2').lightSlider({
-            gallery: false,
-            item: 3,
-            auto: true,
-            loop: true,
-            pager: false,
-            pause: 5000,
-            speed: 4000,
-            slideMargin: 10,
-            controls: false,
-            mode: "slide"
-        });
+        // $('.image-gallery-2').lightSlider({
+        //     gallery: false,
+        //     item: 3,
+        //     auto: true,
+        //     loop: true,
+        //     pager: false,
+        //     pause: 5000,
+        //     speed: 4000,
+        //     slideMargin: 10,
+        //     controls: false,
+        //     mode: "slide"
+        // });
     </script>
     <!-- slider MAIN -->
     <script>
