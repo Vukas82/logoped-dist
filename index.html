@@ -1685,6 +1685,7 @@
                 speed: 4000,
                 slideMargin: 10,
                 controls: false,
+                pauseOnHover: true,
                 mode: "slide"
             });
         });
@@ -1703,6 +1704,7 @@
                 speed: 1000,
                 slideMargin: 10,
                 controls: false,
+                pauseOnHover: true,
                 mode: "slide"
             });
 
@@ -1712,24 +1714,24 @@
         function myFunction(x) {
             if (x.matches) { // If media query matches 992px
                 $(document).ready(function () {
-                    // $("#lightSlider").lightSlider({
-                    //     item: 2,
-                    //     controls: false,
-                    //     pager: false,
+                    $("#lightSlider").lightSlider({
+                        item: 2,
+                        controls: false,
+                        pager: false,
 
-                    // });
-                    //     $('.image-gallery-2').lightSlider({
-                    //         gallery: false,
-                    //         item: 2,
-                    //         auto: true,
-                    //         loop: true,
-                    //         pager: false,
-                    //         pause: 4000,
-                    //         speed: 1000,
-                    //         slideMargin: 10,
-                    //         controls: false,
-                    //         mode: "slide"
-                    //     });
+                    });
+                    $('.image-gallery-2').lightSlider({
+                        gallery: false,
+                        item: 2,
+                        auto: true,
+                        loop: true,
+                        pager: false,
+                        pause: 4000,
+                        speed: 1000,
+                        slideMargin: 10,
+                        controls: false,
+                        mode: "slide"
+                    });
                 });
 
             } else {
@@ -1778,7 +1780,8 @@
                         loop: true,
                         controls: false,
                         pause: 5000,
-                        speed: 4000,
+                        speed: 400,
+                        enableTouch
 
                     });
                     $('.image-gallery').lightSlider({
@@ -1788,7 +1791,7 @@
                         loop: true,
                         pager: false,
                         pause: 5000,
-                        speed: 4000,
+                        speed: 400,
                         slideMargin: 10,
                         controls: false,
                         mode: "slide"
