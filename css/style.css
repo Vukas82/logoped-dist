@@ -272,6 +272,12 @@ h3 {
   #myHeader > ul {
     display: none; } }
 
+@media only screen and (max-width: 576px) {
+  #navbar > li {
+    width: 80%; }
+    #navbar > li a > h2 {
+      font-size: 16px; } }
+
 /* end of responsive nav */
 [data-animation^="animated"] {
   visibility: hidden; }
@@ -3318,6 +3324,8 @@ header {
           margin-right: 10px; } }
 
 @media only screen and (max-width: 576px) {
+  .services__inner h3 {
+    font-size: 44px; }
   .services__inner .service {
     flex-direction: column; }
     .services__inner .service .img {
@@ -3327,8 +3335,8 @@ header {
         width: 100%;
         height: 100%; }
     .services__inner .service .text {
-      width: 90%;
-      padding: 20px 40px;
+      width: 100%;
+      padding: 20px 10px;
       text-align: justify; }
       .services__inner .service .text h4 {
         font-size: 38px; }
