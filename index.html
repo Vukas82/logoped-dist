@@ -1653,7 +1653,7 @@
     <!-- ==================================================================================== -->
 
     <!-- LIGHT SLIDER 3 -->
-    <!-- <script>
+    <script>
         $(document).ready(function () {
 
             $('.image-gallery-2').lightSlider({
@@ -1669,7 +1669,7 @@
                 mode: "slide"
             });
         });
-    </script> -->
+    </script>
 
     <!-- sta drugi kazu -->
     <script>
@@ -1752,6 +1752,7 @@
                     controls: false,
                     mode: "slide"
                 });
+
             }
         }
 
@@ -1786,7 +1787,7 @@
 
                     });
                     $('.image-gallery').lightSlider({
-                        // gallery: false,
+                        gallery: false,
                         item: 1,
                         slideMove: 1,
                         auto: true,
@@ -1794,18 +1795,28 @@
                         pager: false,
                         pause: 5000,
                         speed: 400,
-                        slideMargin: 10,
+                        slideMargin: 0,
                         controls: false,
                         mode: "slide",
                         enableTouch: false
 
                     });
-                    $(".image-gallery-2").lightSlider({
+                    $(".image-gallery-2").lightSlider({ //  ljuljaske
                         item: 1,
                         controls: false,
                         pager: false,
                         enableTouch: false,
-                        slideMove: 1
+                        slideMove: 1,
+                        slideMargin: 0,
+
+                        gallery: false,
+                        auto: true,
+                        loop: true,
+                        pager: false,
+                        pause: 4000,
+                        speed: 1000,
+                        mode: "slide"
+
 
 
                     });
@@ -1816,19 +1827,37 @@
                     item: 2,
                     controls: false,
                     pager: false,
-                    slideMove: 2
+                    slideMove: 1,
+                    slideMargin: 0
+
 
                 });
+                $('.image-gallery').lightSlider({
+                    gallery: false,
+                    item: 2,
+                    slideMove: 1,
+                    auto: true,
+                    loop: true,
+                    pager: false,
+                    pause: 5000,
+                    speed: 400,
+                    slideMargin: 0,
+                    controls: false,
+                    mode: "slide",
+                    enableTouch: false
+
+                });
+
                 $('.image-gallery-2').lightSlider({
                     gallery: false,
                     item: 2,
-                    slideMove: 2,
+                    slideMove: 1,
                     auto: true,
                     loop: true,
                     pager: false,
                     pause: 4000,
                     speed: 1000,
-                    slideMargin: 10,
+                    slideMargin: 0,
                     controls: false,
                     mode: "slide"
                 });
