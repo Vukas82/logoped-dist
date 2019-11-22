@@ -3093,7 +3093,7 @@ header {
 
 .slider {
   width: 100%;
-  height: auto; }
+  height: 750px; }
   .slider .slider__wraper {
     width: 100%;
     height: 100%;
@@ -3101,16 +3101,21 @@ header {
     flex-direction: row;
     position: relative;
     overflow: hidden; }
-    .slider .slider__wraper .carousel__slide {
-      position: relative; }
-      .slider .slider__wraper .carousel__slide picture {
+    .slider .slider__wraper .slider__main {
+      width: 100%;
+      height: 100%; }
+      .slider .slider__wraper .slider__main .carousel__slide {
+        width: 100%;
         height: 100%;
-        width: 100%; }
-        .slider .slider__wraper .carousel__slide picture img {
+        position: relative; }
+        .slider .slider__wraper .slider__main .carousel__slide picture {
           height: 100%;
-          width: 100%;
-          object-fit: cover;
-          object-position: center; }
+          width: 100%; }
+          .slider .slider__wraper .slider__main .carousel__slide picture img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center; }
     .slider .slider__wraper .carousel-div {
       position: absolute;
       left: 10%;
@@ -3150,48 +3155,58 @@ header {
         font-weight: 700;
         font-size: 17px; }
 
+@media only screen and (max-width: 1370px) {
+  .slider {
+    height: 650px; } }
+
 @media only screen and (max-width: 992px) {
-  .slider .slider__wraper .carousel-div {
-    position: absolute;
-    left: 10%;
-    top: 150px;
-    height: 150px;
-    width: 400px;
-    padding: 20px 20px; }
-    .slider .slider__wraper .carousel-div h3 {
-      font-size: 46px; }
-    .slider .slider__wraper .carousel-div p {
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      font-weight: 700;
-      font-size: 17px; } }
+  .slider {
+    height: 550px; }
+    .slider .slider__wraper .carousel-div {
+      position: absolute;
+      left: 10%;
+      top: 150px;
+      height: 150px;
+      width: 400px;
+      padding: 20px 20px; }
+      .slider .slider__wraper .carousel-div h3 {
+        font-size: 46px; }
+      .slider .slider__wraper .carousel-div p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px; } }
 
 @media only screen and (max-width: 768px) {
-  .slider .slider__wraper .carousel-div {
-    display: none !important; }
-    .slider .slider__wraper .carousel-div h3 {
-      font-size: 36px; }
-    .slider .slider__wraper .carousel-div p {
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      font-weight: 700;
-      font-size: 15px; }
+  .slider {
+    height: 400px; }
+    .slider .slider__wraper .carousel-div {
+      display: none !important; }
+      .slider .slider__wraper .carousel-div h3 {
+        font-size: 36px; }
+      .slider .slider__wraper .carousel-div p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px; }
   body > section.slider > div > div > ul {
     bottom: 5px !important; } }
 
 @media only screen and (max-width: 576px) {
-  .slider .slider__wraper .carousel-div {
-    display: none !important; }
-    .slider .slider__wraper .carousel-div h3 {
-      font-size: 36px; }
-    .slider .slider__wraper .carousel-div p {
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      font-weight: 700;
-      font-size: 15px; }
+  .slider {
+    height: 400px; }
+    .slider .slider__wraper .carousel-div {
+      display: none !important; }
+      .slider .slider__wraper .carousel-div h3 {
+        font-size: 36px; }
+      .slider .slider__wraper .carousel-div p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px; }
   body > section.slider > div > div > ul {
     bottom: 5px !important; }
   body > section.slider > div > div > div > div {
@@ -4085,14 +4100,18 @@ header {
     #section_o_nama .onama h3 {
       font-size: 44px; }
     #section_o_nama .onama .tab {
-      margin-top: 50px; }
+      margin-top: 50px;
+      padding: 0; }
       #section_o_nama .onama .tab .tabs {
-        width: 50%;
-        margin-left: 80px; }
+        width: 100%;
+        margin-left: 0px;
+        box-sizing: border-box; }
         #section_o_nama .onama .tab .tabs .tab__all {
           float: right;
           padding: 3px 10px;
-          padding-top: 18px; }
+          padding-top: 18px;
+          margin-right: 0;
+          font-size: 14px; }
     #section_o_nama .onama .tab-content {
       width: 100%; }
       #section_o_nama .onama .tab-content .tab-panel {
@@ -4109,8 +4128,11 @@ header {
           grid-column: 1 / 6;
           grid-row: 2; }
           #section_o_nama .onama .tab-content .tab-panel .right__tab__content img {
-            height: auto; }
+            height: auto;
+            border-radius: 20px 60px; }
         #section_o_nama .onama .tab-content .tab-panel .bottom {
+          border-radius: 20px 60px;
+          padding: 40px 0;
           height: auto;
           grid-column: 1 / 6;
           grid-row: 3; }
@@ -4187,6 +4209,8 @@ header {
           height: auto;
           grid-column: 1 / 6;
           grid-row: 2; }
+          #section_o_nama .onama .tab-content .tab-panel__2 .left__tab__content__2 img {
+            border-radius: 20px 60px; }
         #section_o_nama .onama .tab-content .tab-panel__2 .acordion {
           grid-column: 1 / 6;
           grid-row: 3; }
@@ -4200,14 +4224,15 @@ header {
         grid-row: 2; }
         #section_o_nama .onama .tab-content .tab-panel__2-2 .left__tab__content__2 img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          border-radius: 20px 60px; }
       #section_o_nama .onama .tab-content .tab-panel__2-2 .acordion {
         grid-column: 1 / 6;
         grid-row: 1;
         padding-top: 30px;
         margin-top: 20px !important; }
         #section_o_nama .onama .tab-content .tab-panel__2-2 .acordion .acordion__wraper {
-          margin-top: 40px; } }
+          margin-top: 80px; } }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
