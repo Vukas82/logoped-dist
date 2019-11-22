@@ -20,7 +20,26 @@
 
 </head>
 
-<body>
+<body class="body" onload="loader()">
+
+    <script>
+        // const loadedFun = function () {
+        //     gear.style.display = "none"
+        // }
+
+        const body = document.querySelector('body')
+        // let gear = document.querySelector('.gears');
+
+        function loader() {
+            body.classList.add('loaded')
+        };
+    </script>
+
+    <div id="load__wrapper">
+        <div id="loader"></div>
+        <div class="loader__section section__left"></div>
+        <div class="loader__section section__right"></div>
+    </div>
 
     <header id="header">
         <!-- <div class="container"> -->
