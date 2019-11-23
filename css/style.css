@@ -5595,8 +5595,8 @@ footer {
       padding: 10px;
       box-sizing: border-box; }
       footer .credits .back-to-top img {
-        width: 100%;
-        height: 100%; }
+        width: 14px;
+        height: 14px; }
   footer .credits:hover a {
     color: black; }
   footer .puz_2 {
