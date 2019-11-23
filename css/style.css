@@ -5591,7 +5591,9 @@ footer {
       border-radius: 20px 40px;
       box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.29);
       background-color: #E21C3F;
-      z-index: 9999; }
+      z-index: 9999;
+      padding: 10px;
+      box-sizing: border-box; }
       footer .credits .back-to-top img {
         width: 100%;
         height: 100%; }
