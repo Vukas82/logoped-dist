@@ -3244,67 +3244,59 @@ header {
 
 .slider {
   width: 100%;
-  height: 750px; }
-  .slider .slider__wraper {
+  height: 750px;
+  overflow: hidden; }
+  .slider .slider__main {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden; }
-    .slider .slider__wraper .slider__main {
-      width: 100%;
-      height: 100%; }
-      .slider .slider__wraper .slider__main .carousel__slide {
-        width: 100%;
+    height: 100%; }
+    .slider .slider__main .carousel__slide {
+      position: relative; }
+      .slider .slider__main .carousel__slide .carousel-div {
+        position: absolute;
+        left: 10%;
+        top: 220px;
+        height: 200px;
+        width: 500px;
+        padding: 20px 20px;
+        opacity: 0;
+        animation: lightSpeedIn 1s forwards;
+        transition-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
+        transform-origin: center top;
+        animation-delay: 3s;
+        text-align: center;
+        background-color: #19aa5f;
+        font-weight: 900;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 70px;
+        border: 1px solid #fff; }
+        .slider .slider__main .carousel__slide .carousel-div h3 {
+          font-size: 2.5rem;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 15px;
+          color: #fff;
+          visibility: visible;
+          text-align: center;
+          line-height: 72px;
+          letter-spacing: 0px;
+          font-weight: 700;
+          font-size: 65px; }
+        .slider .slider__main .carousel__slide .carousel-div p {
+          margin: 0;
+          color: #fff;
+          text-align: center;
+          font-weight: 700;
+          font-size: 17px; }
+      .slider .slider__main .carousel__slide picture {
         height: 100%;
-        position: relative; }
-        .slider .slider__wraper .slider__main .carousel__slide picture {
+        width: 100%; }
+        .slider .slider__main .carousel__slide picture img {
           height: 100%;
-          width: 100%; }
-          .slider .slider__wraper .slider__main .carousel__slide picture img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center; }
-    .slider .slider__wraper .carousel-div {
-      position: absolute;
-      left: 10%;
-      top: 220px;
-      height: 200px;
-      width: 500px;
-      padding: 20px 20px;
-      opacity: 0;
-      animation: lightSpeedIn 1s forwards;
-      transition-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
-      transform-origin: center top;
-      animation-delay: 3s;
-      text-align: center;
-      background-color: #19aa5f;
-      font-weight: 900;
-      border-top-left-radius: 70px;
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 70px;
-      border: 1px solid #fff; }
-      .slider .slider__wraper .carousel-div h3 {
-        font-size: 2.5rem;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 15px;
-        color: #fff;
-        visibility: visible;
-        text-align: center;
-        line-height: 72px;
-        letter-spacing: 0px;
-        font-weight: 700;
-        font-size: 65px; }
-      .slider .slider__wraper .carousel-div p {
-        margin: 0;
-        color: #fff;
-        text-align: center;
-        font-weight: 700;
-        font-size: 17px; }
+          width: 100%;
+          object-fit: cover;
+          object-position: center; }
 
 @media only screen and (max-width: 1370px) {
   .slider {
@@ -5588,6 +5580,21 @@ footer {
       color: #E21C3F; }
     footer .credits a {
       color: #E21C3F; }
+    footer .credits .back-to-top {
+      display: none;
+      transition: all 0.3s ease-in-out;
+      position: fixed;
+      bottom: 58px;
+      height: 40px;
+      width: 40px;
+      right: 22px;
+      border-radius: 20px 40px;
+      box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.29);
+      background-color: #E21C3F;
+      z-index: 9999; }
+      footer .credits .back-to-top img {
+        width: 100%;
+        height: 100%; }
   footer .credits:hover a {
     color: black; }
   footer .puz_2 {

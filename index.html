@@ -175,56 +175,72 @@
 
     <!-- S L I D E R -->
 
+
+    <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
+    <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
+    <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
+
+
+
     <section class="slider">
-        <div class="slider__wraper">
+
+        <ul class="slider__main cs-hidden">
+            <li class="carousel__slide">
+                <div class="carousel-div" style="display: block">
+                    <h3>Artikulacija</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
+                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                </div>
+                <picture>
+                    <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
+                        alt="logoped-logopedski-tretmani-logoped-borča">
+                </picture>
+            </li>
+            <li class="carousel__slide">
+                <div class="carousel-div" style="display: none">
+                    <h3>Artikulacija</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
+                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                </div>
+                <picture>
+                    <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
+                        alt="logoped-logopedski-tretmani-logoped-borča">
+                </picture>
+            </li>
+            <li class="carousel__slide">
+                <div class="carousel-div" style="display: none">
+                    <h3>Artikulacija</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
+                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                </div>
+
+                <picture>
+                    <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
+                        alt="logoped-logopedski-tretmani-logoped-borča">
+                </picture>
+            </li>
+
+        </ul>
 
 
-            <!-- LIGHT slider NEW -->
 
-            <!-- <ul class="carousel__track slider__main gallery list-unstyled"> -->
-            <ul class="slider__main cs-hidden">
-                <li class="carousel__slide">
-                    <div id="innerDiv1" class="carousel-div current-inner-div " style="display: block">
-                        <h3>Artikulacija</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                            culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
-                    </div>
 
-                    <picture>
-                        <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
-                        <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
-                            alt="logoped-logopedski-tretmani-logoped-borča">
-                    </picture>
-                </li>
-                <li class="carousel__slide">
-                    <div id="innerDiv2" class="carousel-div" style="display: none">
-                        <h3>Artikulacija</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                            culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
-                    </div>
-                    <picture>
-                        <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
-                        <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
-                            alt="logoped-logopedski-tretmani-logoped-borča">
-                    </picture>
-                </li>
-                <li class="carousel__slide">
-                    <div id="innerDiv3" class="carousel-div" style="display: none">
-                        <h3>Artikulacija</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                            culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
-                    </div>
-
-                    <picture>
-                        <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
-                        <img class="carousel__image" src="images/logoped-logopedski-tretmani-logoped-borča-3.jpg"
-                            alt="logoped-logopedski-tretmani-logoped-borča">
-                    </picture>
-                </li>
-
-            </ul>
-        </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="services" id="services">
         <div class="services__inner container">
             <h3>Naše usluge</h3>
@@ -1652,6 +1668,11 @@
             <!-- Go To Top Link -->
             <div class="page-scroll hidden-sm hidden-xs">
                 <a href="#page-top" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <div class="page-scroll hidden__xs">
+                <a onclick="topFunction()" id="myBtn" href="#home" class="back-to-top" style="display: block;">
+                    <img src="./images/arrow-top.svg" alt="back to top">
+                </a>
             </div>
         </div>
 
