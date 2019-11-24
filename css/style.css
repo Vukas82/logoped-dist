@@ -5702,5 +5702,7 @@ footer {
       display: none; } }
 
 @media only screen and (max-width: 576px) {
-  footer {
-    background-color: #ffdfa5 !important; } }
+  footer ul {
+    padding-left: 0; }
+  footer .footer__right ul {
+    text-align: center; } }
