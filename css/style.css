@@ -129,6 +129,38 @@ h3 {
   /* Chrome, Firefox 16+, IE 10+, Opera */
   z-index: 40001; }
 
+#loader__small {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+  border: 3px solid transparent;
+  border-top-color: #f60000;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
+  z-index: 40001; }
+
+#loader__small:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: spin 3s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */ }
+
 #loader:before {
   content: "";
   position: absolute;
@@ -137,7 +169,7 @@ h3 {
   right: 5px;
   bottom: 5px;
   border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: #ffa500;
   border-radius: 50%;
   -webkit-animation: spin 3s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
@@ -152,7 +184,7 @@ h3 {
   right: 15px;
   bottom: 15px;
   border: 3px solid transparent;
-  border-top-color: #f9c922;
+  border-top-color: #19aa5f;
   border-radius: 50%;
   -webkit-animation: spin 1.5s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
@@ -3339,7 +3371,7 @@ header {
 
 @media only screen and (max-width: 576px) {
   .slider {
-    height: 400px; }
+    height: 300px; }
     .slider .slider__wraper .carousel-div {
       display: none !important; }
       .slider .slider__wraper .carousel-div h3 {
@@ -5588,15 +5620,16 @@ footer {
       height: 40px;
       width: 40px;
       right: 22px;
-      border-radius: 20px 40px;
+      border-radius: 50%;
+      border: 1px solid #fff;
       box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.29);
       background-color: #E21C3F;
       z-index: 9999;
       padding: 10px;
-      box-sizing: border-box; }
-      footer .credits .back-to-top img {
-        width: 14px;
-        height: 14px; }
+      box-sizing: border-box;
+      background-image: url(../images/logoped-logopedski-tretmani-logoped-borča-arrow-top.svg);
+      background-size: cover;
+      background-repeat: no-repeat; }
   footer .credits:hover a {
     color: black; }
   footer .puz_2 {
@@ -5705,4 +5738,6 @@ footer {
   footer ul {
     padding-left: 0; }
   footer .footer__right ul {
-    text-align: center; } }
+    text-align: center; }
+  footer .hidden__xs {
+    display: none; } }
