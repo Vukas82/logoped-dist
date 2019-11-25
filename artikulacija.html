@@ -9,13 +9,39 @@
     <title>Artikulacija, Logoped, Logopedski tretmani, Logoped Borča</title>
     <link rel="stylesheet" href="css/pure.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-vendor.css"> -->
     <!-- light slider -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/lightslider.js"></script> -->
+
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
+
 </head>
 
-<body>
+<body class="body" onload="loader()">
+
+    <script>
+        // const loadedFun = function () {
+        //     gear.style.display = "none"
+        // }
+
+        const body = document.querySelector('body')
+        // let gear = document.querySelector('.gears');
+
+        function loader() {
+            body.classList.add('loaded')
+        };
+    </script>
+
+    <div id="load__wrapper">
+        <div id="loader">
+            <div id="loader__small"></div>
+        </div>
+        <div class="loader__section section__left"></div>
+        <div class="loader__section section__right"></div>
+    </div>
 
     <header id="header">
         <!-- <div class="container"> -->
@@ -30,12 +56,12 @@
                 </a>
 
             </div>
-            <nav>
+            <nav id="myHeader">
                 <ul>
-                    <li><a href="index.html">
+                    <li id="home" class="hover"><a href="index.html">
                             <h2>Početna</h2>
                         </a></li>
-                    <li>
+                    <li id="usluge">
                         <div class="dropdown">
                             <button class="dropbtn">
                                 <h2>Usluge
@@ -71,17 +97,482 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="o nama.html">
+                    <li id="o nama"><a href="#section_o_nama">
                             <h2>O nama</h2>
                         </a></li>
-                    <li><a href="#">
+                    <li id="galerija__nav"><a href="#gallery">
                             <h2>Galerija</h2>
                         </a></li>
-                    <li><a href="kontakt.html">
+                    <li id="cenovnik__nav"><a href="#cenovnik">
+                            <h2>Cenovnik</h2>
+                        </a></li>
+                    <li id="kontakt__nav"><a href="#contact">
                             <h2>Kontakt</h2>
                         </a></li>
                 </ul>
+
+
+                <div class="small-drop-btn" aria-expanded="false" id="btn" onclick="toggle('navbar', 'btn')">
+                    <a href="#navbar">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                </div>
+
             </nav>
         </div>
         <!-- </div> -->
     </header>
+
+    <!-- nav menu za small screen -->
+    <nav id="nav-small" class="navbar2 nav-small" style="">
+        <!-- <div class="logo">
+                        <img src="/images/logo.svg" alt="logo">
+                    </div> -->
+
+
+        <ul id="navbar" class="navbar-list-expanded" style="display: none">
+
+            <li>
+                <a href="index.html">
+                    <h2><strong>Rana stimulacija</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="reference.html">
+                    <h2><strong>Rana stimulacija</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="zastupnistva.html">
+                    <h2><strong>Razvoj govora kroz igru</strong></h2>
+                </a>
+            </li>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Artikulacija ( izgovor glasova )</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Rad po Montesori metodi</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Mucanje i tikovi</strong></h2>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <h2><strong>Priprema za polazak u školu</strong></h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ==========================end small nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="viewport">
+
+        <img src="./images/baby-390555_1920.jpg" alt="">
+
+    </section>
+    <div class="heading_wraper">
+        <h2>Artikulacija</h2>
+    </div>
+
+    <section class="text__about container">
+        <div class="left__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum autem assumenda fugiat, nihil
+                cum quod, ullam repellendus eius asperiores quis, nesciunt illum aliquam sint provident iste odit
+                veniam praesentium laudantium quasi amet sit dignissimos quibusdam perspiciatis? Maiores impedit, et
+                enim quisquam veritatis maxime animi, reiciendis laboriosam aperiam vel in necessitatibus, ipsam
+                earum. Praesentium repellat sapiente omnis quisquam voluptatem perferendis autem enim quae
+                consequatur. Ratione ipsum esse est recusandae, laborum mollitia distinctio? Harum similique dolores
+                provident esse vero aspernatur, autem ullam laboriosam itaque molestias incidunt tempora! Distinctio
+                sit nesciunt quos, id minus sunt sed amet deserunt, quia illo soluta ut saepe. Nihil, voluptates
+                praesentium incidunt optio reprehenderit nisi nesciunt. Nemo iste debitis expedita nisi perspiciatis
+
+            </p>
+        </div>
+        <div class="right__text">
+            <img src="./images/Logoped-logopedska-ordinacija-logoped-borča-mucanje.jpg"
+                alt="Logoped-logopedska-ordinacija-logoped-borča-mucanje">
+        </div>
+        <div class="important__text">
+            <p class="description2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, cum nesciunt
+                laboriosam repellendus,
+                quibusdam optio aliquid eius similique vel error voluptate quo repudiandae ad fugiat culpa repellat
+            </p>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="contact">
+        <!-- <svg id="curveDownColor1" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+            height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg> -->
+
+        <!-- <div class="bird">
+            <img class="layer" data-speed="-1" src="images/logoped-logopedski-tretmani-logoped-borča-ptica.png"
+                alt="logoped-logopedski-tretmani-logoped-borča-kontakt">
+        </div> -->
+
+
+        <!-- <div class="puz">
+            <div class="img layer__5" data-speed="-4"></div>
+            <script>
+                document.addEventListener('scroll', parallax4);
+
+                function parallax4(e) {
+                    this.querySelectorAll('.layer__5').forEach(layer => {
+                        var speed = layer.getAttribute('data-speed')
+                        // var x = (window.innerWidth - e.pageX * speed) / 100;
+                        var x = (window.innerWidth - window.scrollY * speed) / 100;
+                        layer.style.transform = `translateX(${x}px)`;
+                    })
+                }
+            </script>
+        </div> -->
+
+
+
+        <!-- <h3>Kontakt</h3> -->
+        <div class="tedy">
+            <img src="images/logoped-logopedski-tretmani-logoped-borča-tedy.svg"
+                alt="logoped-logopedski-tretmani-logoped-borča-tedy">
+        </div>
+        <div class="container">
+
+            <div class="contakt__form__wraper">
+                <div class="contact__right">
+
+                    <h5>Pošaljite nam poruku</h5>
+
+                    <!-- ==================================================================================== -->
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+                        action="https://script.google.com/macros/s/AKfycbxwZPMonmfAAoHXNfpf4aBx7yByAsPtlyp2R7ISsQ/exec">
+                        <!-- change the form action to your script url -->
+                        <div class="form-elements">
+                            <div class="half">
+                                <label for="name">Ime: </label>
+                                <input type="text" id="name" name="name" />
+                                <label for="name">Naslov: </label>
+                                <input type="text" id="poruka" name="naslov" />
+                                <label for="email">Email Adresa:</label>
+                                <input id="email" name="email" type="email" autocomplete="off" value="" required
+                                    placeholder="your.name@email.com" />
+                                <p class="email-invalid" style="display:none">
+                                    Email adresa mora biti validna</p>
+                            </div>
+                        </div>
+                        <p class="full">
+                            <textarea id="message" name="message" rows="7" placeholder="Poruka"></textarea>
+                        </p>
+                        <button>Pošalji</button>
+                        <div class="thankyou_message">
+                            <h2><em>Hvala</em> na poslatoj poruci! <br>
+                                Odgovorićemo Vam uskoro!</h2>
+                        </div>
+                        <input class="agreemment" type="checkbox" name="" value="quwry" checked>
+                        <span class="contact__p wrongForm"> <small> Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Adipisci, laboriosam?</small></span><br><br>
+                    </form>
+                    <!-- END -->
+                </div>
+            </div>
+
+            <div class="info_right">
+                <div class="info">
+                    <h5>Posetite nas ili pozovite</h5>
+                    <div class="info__wrap">
+                        <div class="adress">
+
+
+                            <span>
+                                <!-- <img src="images/placeholder.svg" alt="Lager-service-location-icon"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.757 54.757">
+                                    <path
+                                        d="M40.94 5.617A19.052 19.052 0 0027.38 0a19.05 19.05 0 00-13.56 5.617c-6.703 6.702-7.536 19.312-1.804 26.952L27.38 54.757 42.721 32.6c5.755-7.671 4.922-20.281-1.781-26.983zM27.557 26c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7z"
+                                        fill="#E21C3F" /></svg>
+                            </span>
+                            <h6> <strong class="company__name"> Logoped Miljana </strong> | Bratstva i Jedinstva 6,
+                                10000
+                                Beograd - Borča
+                            </h6>
+
+                        </div>
+
+                        <div class="adress">
+                            <div class="contact__span"><img
+                                    src="./images/logoped-logopedska-ordinacija-logoped-borca-kontakt-telefon.svg"
+                                    alt="logoped-logopedska-ordinacija-logoped-borca-kontakt-telefon"></div>
+                            <p class="contact__p">Telefon: <a href="tel:+381694941428">+381 69 4941428</a></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.7193925903093!2d20.45503361505078!3d44.88835917970272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a637949f8e639%3A0xbec017760cfc5d66!2zQnJhdHN0dmEgaSBKZWRpbnN0dmEgNiwg0JHQvtGA0YfQsA!5e0!3m2!1ssr!2srs!4v1573735102805!5m2!1ssr!2srs"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </div>
+        <div class="beetwen"></div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__left">
+                <ul>
+                    <li>
+                        <img src="./images/logoped-logopedska-ordinacija-logoped-borca-kontakt-telefon.svg"
+                            alt="logoped-logopedska-ordinacija-logoped-borca-kontakt-telefon">
+                        <a href="tel:+381694941428">+381 69 4941428</a>
+                    </li>
+                    <li>
+
+                        <!-- <img src="./images/logoped-logopedski-tretmani-logoped-borča-mail.svg"
+                            alt="logoped-logopedski-tretmani-logoped-borča-mail"> -->
+
+                        <svg fill="#E21C3F" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="550.795px"
+                            height="550.795px" viewBox="0 0 550.795 550.795"
+                            style="enable-background:new 0 0 550.795 550.795;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M501.613,491.782c12.381,0,23.109-4.088,32.229-12.16L377.793,323.567c-3.744,2.681-7.373,5.288-10.801,7.767
+			c-11.678,8.604-21.156,15.318-28.434,20.129c-7.277,4.822-16.959,9.737-29.045,14.755c-12.094,5.024-23.361,7.528-33.813,7.528
+			h-0.306h-0.306c-10.453,0-21.72-2.503-33.813-7.528c-12.093-5.018-21.775-9.933-29.045-14.755
+			c-7.277-4.811-16.75-11.524-28.434-20.129c-3.256-2.387-6.867-5.006-10.771-7.809L16.946,479.622
+			c9.119,8.072,19.854,12.16,32.234,12.16H501.613z" />
+                                    <path d="M31.047,225.299C19.37,217.514,9.015,208.598,0,198.555V435.98l137.541-137.541
+			C110.025,279.229,74.572,254.877,31.047,225.299z" />
+                                    <path d="M520.059,225.299c-41.865,28.336-77.447,52.73-106.75,73.195l137.486,137.492V198.555
+			C541.98,208.396,531.736,217.306,520.059,225.299z" />
+                                    <path d="M501.613,59.013H49.181c-15.784,0-27.919,5.33-36.42,15.979C4.253,85.646,0.006,98.97,0.006,114.949
+			c0,12.907,5.636,26.892,16.903,41.959c11.267,15.061,23.256,26.891,35.961,35.496c6.965,4.921,27.969,19.523,63.012,43.801
+			c18.917,13.109,35.368,24.535,49.505,34.395c12.05,8.396,22.442,15.667,31.022,21.701c0.985,0.691,2.534,1.799,4.59,3.269
+			c2.215,1.591,5.018,3.61,8.476,6.107c6.659,4.816,12.191,8.709,16.597,11.683c4.4,2.975,9.731,6.298,15.985,9.988
+			c6.249,3.685,12.143,6.456,17.675,8.299c5.533,1.842,10.655,2.766,15.367,2.766h0.306h0.306c4.711,0,9.834-0.924,15.368-2.766
+			c5.531-1.843,11.42-4.608,17.674-8.299c6.248-3.69,11.572-7.02,15.986-9.988c4.406-2.974,9.938-6.866,16.598-11.683
+			c3.451-2.497,6.254-4.517,8.469-6.102c2.057-1.476,3.605-2.577,4.596-3.274c6.684-4.651,17.1-11.892,31.104-21.616
+			c25.482-17.705,63.01-43.764,112.742-78.281c14.957-10.447,27.453-23.054,37.496-37.803c10.025-14.749,15.051-30.22,15.051-46.408
+			c0-13.525-4.873-25.098-14.598-34.737C526.461,63.829,514.932,59.013,501.613,59.013z" />
+                                </g>
+                        </svg>
+                        Email: <a href="mailto:vukas82@gmail.com">logopedMiljana@gmail.com</a>
+
+                    </li>
+                    <li>
+
+
+                        <!-- <img src="images/placeholder.svg" alt="Lager-service-location-icon"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.757 54.757">
+                            <path
+                                d="M40.94 5.617A19.052 19.052 0 0027.38 0a19.05 19.05 0 00-13.56 5.617c-6.703 6.702-7.536 19.312-1.804 26.952L27.38 54.757 42.721 32.6c5.755-7.671 4.922-20.281-1.781-26.983zM27.557 26c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7z"
+                                fill="#E21C3F" /></svg>
+
+                        <h6> <strong class="company__name"> Logoped </strong> | Bratstva i jedinstva 6,
+                            10000
+                            Borča
+                        </h6>
+
+                    </li>
+                    <li>
+
+                        <!-- <img src="./images/clock.svg" alt="logoped-logopedski-tretmani-logoped-borča-mail"> -->
+                        <svg fill="#E21C3F" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 299.995 299.995"
+                            style="enable-background:new 0 0 299.995 299.995;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M149.995,0C67.156,0,0,67.158,0,149.995s67.156,150,149.995,150s150-67.163,150-150S232.834,0,149.995,0z
+			 M214.842,178.524H151.25c-0.215,0-0.415-0.052-0.628-0.06c-0.213,0.01-0.412,0.06-0.628,0.06
+			c-5.729,0-10.374-4.645-10.374-10.374V62.249c0-5.729,4.645-10.374,10.374-10.374s10.374,4.645,10.374,10.374v95.527h54.47
+			c5.729,0,10.374,4.645,10.374,10.374C225.212,173.879,220.571,178.524,214.842,178.524z" />
+                                </g>
+
+                        </svg>
+                        Pon - Pet od 8h do 20h
+
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__center">
+                <div class="logo__footer nav__logo">
+                    <a href="index.html">
+                        <img src="images/logoped-logopedski-tretmani-logoped-borča-1.png"
+                            alt="logoped-logopedski-tretmani-logoped-borča">
+                    </a>
+                </div>
+                <div class="social__icon">
+                    <ul>
+                        <li><a href="#">
+                                <!-- <img src="./images/instagram.svg"
+                                    alt="logoped-logopedski-tretmani-logoped-borča"> -->
+                                <svg fill="#E21C3F" height="512pt" viewBox="0 0 512 512" width="512pt"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0" />
+                                    <path
+                                        d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0" />
+                                    <path
+                                        d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0" />
+                                </svg>
+                            </a></li>
+                        <li><a href="#">
+                                <!-- <img src="./images/facebook-logo.svg"
+                                    alt="logoped-logopedski-tretmani-logoped-borča"> -->
+                                <svg fill="#E21C3F" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.124px"
+                                    height="96.123px" viewBox="0 0 96.124 96.123"
+                                    style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+		c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+		c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+		c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+                                    </g>
+
+                                </svg>
+                            </a></li>
+                        <li>
+                            <a href="#">
+                                <!--<img src="./images/twitter.svg"
+                                    alt="logoped-logopedski-tretmani-logoped-borča"> -->
+                                <svg fill="#E21C3F" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="449.956px"
+                                    height="449.956px" viewBox="0 0 449.956 449.956"
+                                    style="enable-background:new 0 0 449.956 449.956;" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M449.956,85.657c-17.702,7.614-35.408,12.369-53.102,14.279c19.985-11.991,33.503-28.931,40.546-50.819
+		c-18.281,10.847-37.787,18.268-58.532,22.267c-18.274-19.414-40.73-29.125-67.383-29.125c-25.502,0-47.246,8.992-65.24,26.98
+		c-17.984,17.987-26.977,39.731-26.977,65.235c0,6.851,0.76,13.896,2.284,21.128c-37.688-1.903-73.042-11.372-106.068-28.407
+		C82.46,110.158,54.433,87.46,31.403,59.101c-8.375,14.272-12.564,29.787-12.564,46.536c0,15.798,3.711,30.456,11.138,43.97
+		c7.422,13.512,17.417,24.455,29.98,32.831c-14.849-0.572-28.743-4.475-41.684-11.708v1.142c0,22.271,6.995,41.824,20.983,58.674
+		c13.99,16.848,31.645,27.453,52.961,31.833c-7.995,2.091-16.086,3.138-24.269,3.138c-5.33,0-11.136-0.475-17.416-1.42
+		c5.9,18.459,16.75,33.633,32.546,45.535c15.799,11.896,33.691,18.028,53.677,18.418c-33.498,26.262-71.66,39.393-114.486,39.393
+		c-8.186,0-15.607-0.373-22.27-1.139c42.827,27.596,90.03,41.394,141.612,41.394c32.738,0,63.478-5.181,92.21-15.557
+		c28.746-10.369,53.297-24.267,73.665-41.686c20.362-17.415,37.925-37.448,52.674-60.097c14.75-22.651,25.738-46.298,32.977-70.946
+		c7.23-24.653,10.848-49.344,10.848-74.092c0-5.33-0.096-9.325-0.287-11.991C421.785,120.202,437.202,104.306,449.956,85.657z" />
+                                    </g>
+
+                                </svg>
+                            </a></li>
+                        <li><a href="#">
+                                <!-- <img src="./images/pinterest.svg"
+                                    alt="logoped-logopedski-tretmani-logoped-borča"> -->
+                                <svg fill="#E21C3F" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px"
+                                    height="34px" viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path d="M17,0C7.611,0,0,7.61,0,17c0,9.391,7.611,17,17,17c9.389,0,17-7.609,17-17C34,7.61,26.389,0,17,0z M28.211,17.595
+		c-1.795,3.79-6.324,5.89-10.521,4.636c0.346,2.484-0.535,5.512-3.253,6.435c-1.299,0.44-2.715,0.242-3.945-0.292
+		c-1.342-0.58-0.622-2.862-0.734-4.014c0.818,0.172,1.604,1.002,2.489,0.607c0.765-0.338,0.784-1.979,0.812-2.662
+		c0.096-2.295-0.076-4.619-0.076-6.917c0-0.77,0-1.539,0-2.308c0-0.315,0-0.632,0-0.948c0-0.391,0.021-0.332,0.381-0.395
+		c0.964-0.165,1.978-0.113,2.947-0.038c0.276,0.022,0.551,0.049,0.827,0.082c0.35,0.044,0.309-0.035,0.309,0.385
+		c0,0.687,0,1.373,0,2.058c0,1.373,0,2.744,0,4.115c0,0.525,0.433,0.509,0.92,0.622c0.287,0.066,0.578,0.117,0.871,0.146
+		c0.527,0.053,1.062,0.037,1.582-0.056c0.893-0.157,1.734-0.55,2.399-1.141c1.271-1.128,1.571-2.852,1.112-4.409
+		c-1.107-3.764-6.064-5.286-9.724-4.403c-3.93,0.948-7.069,5.203-4.106,8.637c-0.886,0.757-1.649,1.656-2.685,2.24
+		C7.563,20.12,7.3,20.241,7.028,20.336c-0.151-0.156-0.293-0.325-0.424-0.499c-0.271-0.356-0.5-0.744-0.689-1.146
+		c-0.854-1.806-0.99-3.915-0.633-5.851c0.58-3.148,2.662-5.484,5.725-6.699c5.102-2.019,12.416-1.192,16.021,3.105
+		C28.949,11.543,29.488,14.896,28.211,17.595z" />
+                                    </g>
+                                </svg>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <ul>
+                    <li><a href="#">Logopedski tretmani Borča | </a></li>
+                    <li><a href="#">Logopedski tretmani Zemun | </a></li>
+                    <li><a href="#">Logopedski tretmani Ovča | </a></li>
+                    <li><a href="#">Logopedski tretmani Padinska skela | </a></li>
+                    <li><a href="#">Logopedski tretmani Krnjača | </a></li>
+                    <li><a href="#">Logopedski tretmani Novi Beograd</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credits">
+            <hr>
+            Copyright © 2019 - Designed<strong> | </strong>Develop<strong> | </strong>SEO by <a
+                href="mailto:vukas82@gmail.com">Vuletić Vladimir</a>
+            <!-- Go To Top Link
+            <div class="page-scroll hidden-sm hidden-xs">
+                <a href="#page-top" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+            </div> -->
+            <div class="page-scroll hidden__xs">
+                <a onclick="topFunction()" id="myBtn" href="#home" class="back-to-top" style="display: none;">
+                </a>
+            </div>
+        </div>
+
+        <div class="puz_2" style="right: 0px;">
+            <div class="img layer__5" data-speed="-6" style="right: 0px; left: unset; width:30%"></div>
+
+        </div>
+    </footer>
+
+    <!-- svg -->
+
+
+    <script src="js/file1.js"></script>
+
+    <!-- ==================================================================================== -->
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        window.onscroll = function () {
+            stickyHeaderRefense();
+            scrollFunction()
+        };
+    </script>
+
+
+</body>
+
+</html>
