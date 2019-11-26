@@ -277,11 +277,14 @@ h3 {
   grid-auto-columns: 350px; }
   .text__about .left__text {
     grid-column: 1 / 4;
-    grid-row: 1; }
+    grid-row: 1;
+    width: 100%;
+    min-height: 100px; }
     .text__about .left__text p {
       color: #666;
       font-size: 16px;
-      line-height: 30px; }
+      line-height: 30px;
+      text-align: justify; }
   .text__about .right__text {
     grid-column: 4 / 6;
     grid-row: 1; }
@@ -311,6 +314,21 @@ h3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+
+@media only screen and (max-width: 768px) {
+  .heading_wraper h2 {
+    font-size: 44px; }
+  .text__about .left__text {
+    grid-column: 1 / 6 !important;
+    grid-row: 1; }
+  .text__about .right__text {
+    grid-column: 1 / 6 !important;
+    grid-row: 2; }
+  .text__about .important__text {
+    grid-column: 1 / 6 !important;
+    grid-row: 3; }
+    .text__about .important__text .description2 {
+      font-size: 20px; } }
 
 #nav-small {
   display: block;
