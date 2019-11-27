@@ -3377,7 +3377,8 @@ header {
         position: absolute;
         left: 10%;
         top: 220px;
-        height: 200px;
+        height: auto;
+        min-height: 200px;
         width: 500px;
         padding: 20px 20px;
         opacity: 0;
@@ -3431,7 +3432,6 @@ header {
       position: absolute;
       left: 10%;
       top: 150px;
-      height: 150px;
       width: 400px;
       padding: 20px 20px; }
       .slider .slider__wraper .carousel-div h3 {
@@ -4909,6 +4909,9 @@ header {
             font-weight: bold;
             line-height: 45px;
             color: #E21C3F; }
+            #cenovnik .container .price__holder .price .pricing__header .price__value .valuta {
+              font-size: 20px;
+              color: #666; }
           #cenovnik .container .price__holder .price .pricing__header .duration {
             color: #666;
             overflow-x: hidden !important;
