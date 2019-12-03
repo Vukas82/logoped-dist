@@ -3180,12 +3180,11 @@ header {
     margin: auto;
     position: relative; }
     header .header__top h1 {
-      position: absolute;
-      left: -20px;
       margin: 0 0;
       font-size: .65em;
       color: #fff;
-      padding: 1px 20px; }
+      padding: 1px 20px;
+      padding-left: 0; }
   header .header__bottom {
     min-height: 50px;
     margin: auto;
