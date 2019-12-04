@@ -5630,7 +5630,7 @@ footer {
   width: 100%;
   height: 500px;
   padding-top: 100px;
-  font-family: 'Lato', serif;
+  font-family: 'Lato', Arial;
   display: flex;
   flex-direction: column;
   align-items: center;
