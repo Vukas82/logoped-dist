@@ -265,7 +265,20 @@ logoped tretman -->
     <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
     <!-- <source media="(max-width: 700px)" srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
 
+    <!-- <picture>
+                <source media="(max-width: 700px)"
+                    srcset="images/LagerServis-pocetna-slika-700.jpg">
+                <img class="carousel__image" src="images/LagerServis pocetna slika.jpg"
+                    alt="Lager-service-pocetna-slika">
+            </picture> -->
 
+    <!-- <picture> -->
+    <!-- <source media="(max-width: 650px)" srcset="images/originalni-auto-delovi-kribzon-responsive.jpg"> -->
+    <!-- <source media="(max-width: 650px)" srcset="images/krib.jpg"> -->
+    <!-- <source media="(min-width: 465px)" srcset="img_white_flower.jpg"> -->
+    <!-- <img class="grow__up thumbnail" src="images/main_slider/kribzon-auto-delovi-slider1.jpg" -->
+    <!-- alt="originalni-auto-delovi-kribzon"> -->
+    <!-- </picture> -->
 
     <section class="slider">
 
@@ -1602,7 +1615,7 @@ C167.657,37.881,130.125,0.349,83.829,0.349z" />
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
+                // var dots = document.getElementsByClassName("demo");
                 var captionText = document.getElementById("caption");
                 if (n > slides.length) {
                     slideIndex = 1
@@ -1613,12 +1626,12 @@ C167.657,37.881,130.125,0.349,83.829,0.349z" />
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
+                // for (i = 0; i < dots.length; i++) {
+                //     dots[i].className = dots[i].className.replace(" active", "");
+                // }
                 slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
+                // dots[slideIndex - 1].className += " active";
+                // captionText.innerHTML = dots[slideIndex - 1].alt;
             }
         </script>
         <!-- gallery -->
@@ -2071,3 +2084,7 @@ C167.657,37.881,130.125,0.349,83.829,0.349z" />
 </body>
 
 </html>
+
+
+
+<!-- ================================ -->

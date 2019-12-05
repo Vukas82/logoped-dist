@@ -1,8 +1,13 @@
 @charset "UTF-8";
 html {
   box-sizing: border-box;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
 h3 {
   text-transform: uppercase;
@@ -3700,7 +3705,7 @@ header {
   .discover__us .img {
     width: 100%;
     height: 100%;
-    background-image: url("../images/baby-390555_1920.jpg");
+    background-image: url("../images/content/logoped-logopeski-tretmani-logoped-borca-dislalija-1820x1080.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left;
@@ -3768,6 +3773,8 @@ header {
 @media only screen and (max-width: 992px) {
   .discover__us {
     height: 650px; }
+    .discover__us .img {
+      background-image: url("../images/content/logoped-logopeski-tretmani-logoped-borca-dislalija-1365x810.webp"); }
     .discover__us .discover_text {
       left: 50%;
       transform: translateX(-50%);
@@ -3778,6 +3785,8 @@ header {
 @media only screen and (max-width: 768px) {
   .discover__us {
     height: 750px; }
+    .discover__us .img {
+      background-image: url("../images/content/logoped-logopeski-tretmani-logoped-borca-dislalija-tablet.webp"); }
     .discover__us .discover_text {
       width: 70%;
       height: 300px;
@@ -3786,6 +3795,8 @@ header {
 @media only screen and (max-width: 576px) {
   .discover__us {
     height: 850px; }
+    .discover__us .img {
+      background-image: url("../images/content/logoped-logopeski-tretmani-logoped-borca-dislalija-phone.webp"); }
     .discover__us .discover_text {
       height: 500px;
       border-radius: 15px 90px;
@@ -5535,7 +5546,7 @@ header {
               max-width: 100%;
               margin-bottom: 5px;
               color: #666;
-              font-family: 'Lato', serif;
+              font-family: 'Lato', Arial;
               font-size: 13px; }
             #contact .container .info_right .info .info__wrap .adress .contact__span {
               width: 13px; }
