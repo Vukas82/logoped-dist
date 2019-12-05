@@ -248,7 +248,7 @@ h3 {
     height: 100%; }
 
 .heading_wraper {
-  background-image: url(http://ingridkuhn.com/themes/littleones_html/css/../img/bgdots.png), url(http://ingridkuhn.com/themes/littleones_html/css/../img/bgdots2.png);
+  background-image: url("../images/pomocne/logoped-logopedska-ordinacija-logoped-borca-disleksija.png"), url("../images/pomocne/logoped-logopedska-ordinacija-logoped-borca-disleksija.png");
   background-position: center left, center right;
   background-repeat: no-repeat;
   padding: 60px 30px;
@@ -389,13 +389,6 @@ h3 {
     border: 1px solid #f3f5f9;
     border-radius: 4px;
     z-index: 1; }
-  #nav-small .dropdown-content::before {
-    content: url("images/arrow-top.svg");
-    position: absolute;
-    top: -15px;
-    right: 22px;
-    width: 20px;
-    height: 20px; }
   #nav-small .dropdown-content a {
     padding: 1px 1rem !important;
     text-decoration: none;
@@ -3306,13 +3299,6 @@ header {
                 font-weight: 700;
                 padding: 0 33px;
                 animation: elastic-inner 1s forwards; }
-          header .header__bottom nav ul .dropdown .dropdown-content::before {
-            content: url("images/arrow-top.svg");
-            position: absolute;
-            top: -15px;
-            right: 22px;
-            width: 20px;
-            height: 20px; }
           header .header__bottom nav ul .dropdown .dropdown-content a {
             padding: 1px 1rem !important;
             text-decoration: none;
@@ -3814,7 +3800,7 @@ header {
   background-image: linear-gradient(#66CCFF, #edf6fa);
   padding: 70px 0;
   width: 100%;
-  height: 1200px; }
+  height: 1100px; }
   .parents__say #cloud1.colored {
     fill: #66CCFF;
     position: absolute;
@@ -3854,71 +3840,73 @@ header {
     .parents__say .parents .slider__2 {
       margin-top: 50px;
       width: 90%; }
-      .parents__say .parents .slider__2 .image-gallery li {
-        padding: 50px 0px; }
-        .parents__say .parents .slider__2 .image-gallery li .card__parent {
-          font-weight: 400;
-          color: #666;
-          overflow-x: hidden !important;
-          font-family: 'Lato', serif;
-          padding: 20px 15px 50px;
-          margin-bottom: 20px; }
-          .parents__say .parents .slider__2 .image-gallery li .card__parent .description {
-            background: #fff;
-            color: #333333;
-            border-radius: 40px;
-            font-size: 14px;
-            box-shadow: 10px 0px 0px 0px rgba(153, 153, 153, 0.22);
-            padding: 45px 35px;
-            position: relative;
-            height: auto; }
-            .parents__say .parents .slider__2 .image-gallery li .card__parent .description p {
-              color: #666;
-              font-size: 16px;
-              line-height: 30px;
-              margin: 0 0 10px; }
-          .parents__say .parents .slider__2 .image-gallery li .card__parent .description::before {
-            content: '';
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            top: -20px;
-            left: 40px;
-            background-image: url(../images/quote-left.svg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat; }
-          .parents__say .parents .slider__2 .image-gallery li .card__parent .description::after {
-            content: '';
-            width: 50px;
-            height: 50px;
-            transform: rotate(20deg);
-            position: absolute;
-            bottom: -25px;
-            left: 20px;
-            background-image: url("../images/left-arrow-2.svg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat; }
-          .parents__say .parents .slider__2 .image-gallery li .card__parent .person {
-            margin-top: 50px; }
-            .parents__say .parents .slider__2 .image-gallery li .card__parent .person img {
-              float: left;
-              max-width: 100px;
-              margin-left: 25px;
-              margin-right: 20px;
-              border: 5px solid #E21C3F;
-              border-radius: 50%; }
-            .parents__say .parents .slider__2 .image-gallery li .card__parent .person .ime {
-              color: #333;
-              font-family: 'Baloo', sans-serif;
-              font-size: 18px;
-              font-weight: 600;
-              margin-top: 15px;
-              float: left; }
-              .parents__say .parents .slider__2 .image-gallery li .card__parent .person .ime small {
-                font-family: 'Lato', serif;
-                font-weight: 300; }
+      .parents__say .parents .slider__2 .image-gallery {
+        height: 900px !important; }
+        .parents__say .parents .slider__2 .image-gallery li {
+          padding: 50px 0px; }
+          .parents__say .parents .slider__2 .image-gallery li .card__parent {
+            font-weight: 400;
+            color: #666;
+            overflow-x: hidden !important;
+            font-family: 'Lato', serif;
+            padding: 20px 15px 50px;
+            margin-bottom: 20px; }
+            .parents__say .parents .slider__2 .image-gallery li .card__parent .description {
+              background: #fff;
+              color: #333333;
+              border-radius: 40px;
+              font-size: 14px;
+              box-shadow: 10px 0px 0px 0px rgba(153, 153, 153, 0.22);
+              padding: 45px 35px;
+              position: relative;
+              height: auto; }
+              .parents__say .parents .slider__2 .image-gallery li .card__parent .description p {
+                color: #666;
+                font-size: 16px;
+                line-height: 30px;
+                margin: 0 0 10px; }
+            .parents__say .parents .slider__2 .image-gallery li .card__parent .description::before {
+              content: '';
+              width: 35px;
+              height: 35px;
+              position: absolute;
+              top: -20px;
+              left: 40px;
+              background-image: url(../images/quote-left.svg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            .parents__say .parents .slider__2 .image-gallery li .card__parent .description::after {
+              content: '';
+              width: 50px;
+              height: 50px;
+              transform: rotate(20deg);
+              position: absolute;
+              bottom: -25px;
+              left: 20px;
+              background-image: url("../images/left-arrow-2.svg");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            .parents__say .parents .slider__2 .image-gallery li .card__parent .person {
+              margin-top: 50px; }
+              .parents__say .parents .slider__2 .image-gallery li .card__parent .person img {
+                float: left;
+                max-width: 100px;
+                margin-left: 25px;
+                margin-right: 20px;
+                border: 5px solid #E21C3F;
+                border-radius: 50%; }
+              .parents__say .parents .slider__2 .image-gallery li .card__parent .person .ime {
+                color: #333;
+                font-family: 'Baloo', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 15px;
+                float: left; }
+                .parents__say .parents .slider__2 .image-gallery li .card__parent .person .ime small {
+                  font-family: 'Lato', serif;
+                  font-weight: 300; }
 
 @media only screen and (max-width: 992px) {
   .parents__say {
