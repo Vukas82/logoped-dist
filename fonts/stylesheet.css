@@ -6,6 +6,7 @@
     url('Baloo-Regular.woff2') format('woff2'),
     url('Baloo-Regular.ttf') format('truetype'),
     url('Baloo-Regular.svg') format('svg');
+  font-display: swap;
 }
 
 .fontpro,
@@ -21,6 +22,7 @@
     url('Lato-Regular.woff2') format('woff2'),
     url('Lato-Regular.ttf') format('truetype'),
     url('Lato-Regular.svg') format('svg');
+  font-display: swap;
 }
 
 .fontpro,
